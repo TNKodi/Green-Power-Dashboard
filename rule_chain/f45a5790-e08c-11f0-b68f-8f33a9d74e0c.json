@@ -1,0 +1,2186 @@
+{
+  "entityType" : "RULE_CHAIN",
+  "entity" : {
+    "additionalInfo" : {
+      "description" : ""
+    },
+    "configuration" : null,
+    "debugMode" : false,
+    "externalId" : null,
+    "firstRuleNodeId" : {
+      "entityType" : "RULE_NODE",
+      "id" : "841c7ac5-123d-11f1-8d01-cff7a27c53e8"
+    },
+    "id" : {
+      "entityType" : "RULE_CHAIN",
+      "id" : "f45a5790-e08c-11f0-b68f-8f33a9d74e0c"
+    },
+    "name" : "GP_Rule_Chain-huawei",
+    "root" : false,
+    "type" : "CORE"
+  },
+  "metaData" : {
+    "connections" : [ {
+      "fromIndex" : 0,
+      "toIndex" : 2,
+      "type" : "True"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 0,
+      "type" : "True"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 10,
+      "type" : "True"
+    }, {
+      "fromIndex" : 1,
+      "toIndex" : 19,
+      "type" : "True"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 3,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 40,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 2,
+      "toIndex" : 50,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 4,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 3,
+      "toIndex" : 7,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 4,
+      "toIndex" : 5,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 5,
+      "toIndex" : 6,
+      "type" : "True"
+    }, {
+      "fromIndex" : 7,
+      "toIndex" : 8,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 8,
+      "toIndex" : 9,
+      "type" : "True"
+    }, {
+      "fromIndex" : 10,
+      "toIndex" : 11,
+      "type" : "True"
+    }, {
+      "fromIndex" : 11,
+      "toIndex" : 12,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 13,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 12,
+      "toIndex" : 16,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 13,
+      "toIndex" : 14,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 14,
+      "toIndex" : 15,
+      "type" : "True"
+    }, {
+      "fromIndex" : 16,
+      "toIndex" : 17,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 17,
+      "toIndex" : 18,
+      "type" : "True"
+    }, {
+      "fromIndex" : 19,
+      "toIndex" : 20,
+      "type" : "True"
+    }, {
+      "fromIndex" : 20,
+      "toIndex" : 21,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 21,
+      "toIndex" : 22,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 21,
+      "toIndex" : 25,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 22,
+      "toIndex" : 23,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 23,
+      "toIndex" : 24,
+      "type" : "True"
+    }, {
+      "fromIndex" : 25,
+      "toIndex" : 26,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 26,
+      "toIndex" : 27,
+      "type" : "True"
+    }, {
+      "fromIndex" : 28,
+      "toIndex" : 1,
+      "type" : "True"
+    }, {
+      "fromIndex" : 29,
+      "toIndex" : 28,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 31,
+      "toIndex" : 29,
+      "type" : "Post telemetry"
+    }, {
+      "fromIndex" : 31,
+      "toIndex" : 30,
+      "type" : "Post attributes"
+    }, {
+      "fromIndex" : 31,
+      "toIndex" : 32,
+      "type" : "RPC Request from Device"
+    }, {
+      "fromIndex" : 31,
+      "toIndex" : 33,
+      "type" : "Other"
+    }, {
+      "fromIndex" : 31,
+      "toIndex" : 34,
+      "type" : "RPC Request to Device"
+    }, {
+      "fromIndex" : 31,
+      "toIndex" : 39,
+      "type" : "Generate Report"
+    }, {
+      "fromIndex" : 35,
+      "toIndex" : 31,
+      "type" : "False"
+    }, {
+      "fromIndex" : 35,
+      "toIndex" : 36,
+      "type" : "True"
+    }, {
+      "fromIndex" : 36,
+      "toIndex" : 31,
+      "type" : "False"
+    }, {
+      "fromIndex" : 36,
+      "toIndex" : 37,
+      "type" : "True"
+    }, {
+      "fromIndex" : 37,
+      "toIndex" : 31,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 38,
+      "toIndex" : 35,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 40,
+      "toIndex" : 49,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 42,
+      "toIndex" : 43,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 42,
+      "toIndex" : 55,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 42,
+      "toIndex" : 59,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 43,
+      "toIndex" : 44,
+      "type" : "True"
+    }, {
+      "fromIndex" : 44,
+      "toIndex" : 45,
+      "type" : "GRID_LOST"
+    }, {
+      "fromIndex" : 44,
+      "toIndex" : 46,
+      "type" : "GRID_RESTORED"
+    }, {
+      "fromIndex" : 44,
+      "toIndex" : 57,
+      "type" : "GRID_RESTORED"
+    }, {
+      "fromIndex" : 45,
+      "toIndex" : 48,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 46,
+      "toIndex" : 48,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 50,
+      "toIndex" : 42,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 50,
+      "toIndex" : 51,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 52,
+      "toIndex" : 53,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 52,
+      "toIndex" : 56,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 53,
+      "toIndex" : 41,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 55,
+      "toIndex" : 52,
+      "type" : "True"
+    }, {
+      "fromIndex" : 56,
+      "toIndex" : 54,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 57,
+      "toIndex" : 58,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 59,
+      "toIndex" : 47,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 61,
+      "toIndex" : 62,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 61,
+      "toIndex" : 63,
+      "type" : "Success"
+    }, {
+      "fromIndex" : 62,
+      "toIndex" : 63,
+      "type" : "Success"
+    } ],
+    "firstNodeIndex" : 38,
+    "nodes" : [ {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 183,
+        "layoutY" : 805
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return msg.alarm_1 >= 0;",
+        "tbelScript" : "return msg.p341_alarmStatus1 >= 0;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772534235306,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "18368ca0-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "filter inverter alarm1 present",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1753,
+        "layoutY" : 641
+      },
+      "configuration" : {
+        "messageNames" : [ "alarm_1", "alarm_2", "alarm_3" ],
+        "metadataNames" : [ ],
+        "checkAllKeys" : false
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772082761175,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1836b3b0-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "filter inverter alarms present",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbCheckMessageNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 179,
+        "layoutY" : 917
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var alarmStatus = msg.alarm_1;\r\nvar alarmDescriptions = [\r\n    \"High String Input Voltage\",\r\n    \"DC Arc Fault\",\r\n    \"String Reverse Connection\",\r\n    \"String Current Backfeed\",\r\n    \"Abnormal String Power\",\r\n    \"AFCI Self-Check Fail\",\r\n    \"Phase Wire Short-Circuited to PE\",\r\n    \"Grid Loss\",\r\n    \"Grid Undervoltage\",\r\n    \"Grid Overvoltage\",\r\n    \"Grid Voltage Imbalance\",\r\n    \"Grid Overfrequency\",\r\n    \"Grid Underfrequency\",\r\n    \"Unstable Grid Frequency\",\r\n    \"Output Overcurrent\",\r\n    \"Output DC Component Overhigh\"\r\n];\r\n\r\nvar severityLevels = [\r\n    \"MAJOR\", \"MAJOR\", \"MAJOR\", \"WARNING\",\r\n    \"WARNING\", \"MAJOR\", \"MAJOR\", \"MAJOR\",\r\n    \"MAJOR\", \"MAJOR\", \"MAJOR\", \"MAJOR\",\r\n    \"MAJOR\", \"MAJOR\", \"MAJOR\", \"MAJOR\"\r\n];\r\n\r\n\r\nvar alarmArray = [];\r\nvar activeAlarmCount = 0;\r\n\r\nfor (var i = 0; i < 16; i++) {\r\n    var attributeName = 'al_st1_' + alarmDescriptions[i]\r\n        .replace(/\\s+/g, '_')\r\n        .replace(/[^a-zA-Z0-9_]/g, ''); // Remove any characters that aren't alphanumeric or underscore\r\n    var value = ((alarmStatus & (1 << i)) !== 0) ? 1 : 0;\r\n\r\n    if (value === 1) {\r\n        activeAlarmCount++;\r\n    }\r\n\r\n    var alarmObject = {};\r\n    alarmObject[attributeName] = {\r\n        value: value,\r\n        severity: severityLevels[i]\r\n    };\r\n    alarmArray.push(alarmObject);\r\n}\r\n\r\nreturn {\r\n    msg: alarmArray,\r\n    metadata: {\r\n        deviceType: metadata.deviceType ,\r\n        deviceName: metadata.deviceName ,\r\n        ts: metadata.ts\r\n    },\r\n    msgType: msgType || \"POST_TELEMETRY_REQUEST\"\r\n};\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772534187564,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1836b3b1-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "dividing alarm1 by checking value",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 181,
+        "layoutY" : 1010
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772083498578,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1836b3b2-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "sliptting alarm1",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbSplitArrayMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 79,
+        "layoutY" : 1090
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Function to convert alarm key to a more readable format\r\nfunction formatAlarmName(key) {\r\n    return key.replace('al_st1_', '').replace(/_/g, ' ');\r\n}\r\n\r\nvar alarmKey = Object.keys(msg)[0]; // Get the first (and only) key\r\nvar alarmDetails = msg[alarmKey]; // Access the value for the key\r\nvar alarmValue = alarmDetails.value; // Extract the 'value'\r\nvar severity = alarmDetails.severity; // Extract the 'severity'\r\n\r\n// Initialize existing metadata if not defined\r\nvar updatedMetadata = metadata || {};\r\n\r\n// Format the alarm message based on its status\r\nvar alarmMessage = formatAlarmName(alarmKey) + (alarmValue === 1 ? \" is active\" : \" is cleared\");\r\n\r\n// Merge existing metadata with new alarm details\r\nObject.assign(updatedMetadata, {\r\n    deviceType: \"default\", // Default device type\r\n    alarmType: alarmKey,\r\n    alarmStatus: alarmValue.toString(), // Convert to string for consistency\r\n    severityState: severity,\r\n    alarmMessage: alarmMessage,\r\n    deviceName: \"Test Device\", // Example device name\r\n    ts: metadata.ts || Date.now() // Add timestamp\r\n});\r\n\r\n// Return the result in the desired format\r\nreturn {\r\n    msg: msg,\r\n    metadata: updatedMetadata,\r\n    msgType: \"ALARM\"\r\n};\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772083004312,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1836b3b3-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "add alarm type to the alarm",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 79,
+        "layoutY" : 1163
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return msg.temperature > 20;",
+        "tbelScript" : "return metadata.alarmStatus > 0"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772083004312,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1836b3b4-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "active or not",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 81,
+        "layoutY" : 1238
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : false,
+        "alarmType" : "${alarmMessage}",
+        "severity" : "${severityState}",
+        "propagate" : false,
+        "relationTypes" : [ ],
+        "propagateToOwner" : false,
+        "propagateToOwnerHierarchy" : false,
+        "propagateToTenant" : false,
+        "dynamicSeverity" : true
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772083004312,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1836dac0-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "Create alarm1",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 315,
+        "layoutY" : 1085
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Function to convert alarm key to a more readable format\r\nfunction formatAlarmName(key) {\r\n    return key.replace('al_st1_', '').replace(/_/g, ' ');\r\n}\r\n\r\nvar alarmKey = Object.keys(msg)[0]; // Get the first (and only) key\r\nvar alarmDetails = msg[alarmKey]; // Access the value for the key\r\nvar alarmValue = alarmDetails.value; // Extract the 'value'\r\nvar severity = alarmDetails.severity; // Extract the 'severity'\r\n\r\n// Initialize existing metadata if not defined\r\nvar updatedMetadata = metadata || {};\r\n\r\n// Determine the alarm message and clear status\r\nvar isCleared = alarmValue === 0;\r\n// var alarmMessage = formatAlarmName(alarmKey) + (isCleared ? \" is cleared\" : \" is active\");\r\nvar alarmMessage = formatAlarmName(alarmKey) + \" is active\";\r\n\r\n// Merge existing metadata with new alarm details\r\nObject.assign(updatedMetadata, {\r\n    deviceType: \"default\", // Default device type\r\n    alarmType: alarmKey,\r\n    alarmClearStatus: isCleared ? \"1\" : \"0\", // Convert to string for consistency\r\n    severity: severity,\r\n    alarmMessage: alarmMessage,\r\n    deviceName: \"Test Device\", // Example device name\r\n    ts: metadata.ts || Date.now() // Add timestamp\r\n});\r\n\r\n// Return the result in the desired format\r\nreturn {\r\n    msg: msg,\r\n    metadata: updatedMetadata,\r\n    msgType: \"ALARM\"\r\n};\r\n",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772083004312,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1836dac1-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "add alarm type to the alarm when alarm is off",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 311,
+        "layoutY" : 1159
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return metadata.alarmClearStatus >0",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772083004312,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1836dac2-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "active or not",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 315,
+        "layoutY" : 1234
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmType" : "${alarmMessage}"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772083004312,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1836dac3-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "clear alarm1",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1170,
+        "layoutY" : 798
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return msg.alarm_2 >= 0;",
+        "tbelScript" : "return msg.p341_alarmStatus1 >= 0;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772083803907,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1836dac4-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "filter inverter alarm2 present",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1159,
+        "layoutY" : 929
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var alarmStatus = msg.alarm_2;\r\nvar alarmDescriptions = [\r\n    \"Abnormal Residual Current\", \"Abnormal Grounding\",\r\n    \"Low Insulation Resistance\", \"Overtemperature\",\r\n    \"Device Fault\", \"Upgrade Failed or Version Mismatch\",\r\n    \"License Expired\", \"Faulty Monitoring Unit\",\r\n    \"Faulty Power Collector\", \"Battery Abnormal\",\r\n    \"Active Islanding\", \"Passive Islanding\",\r\n    \"Transient AC Overvoltage\", \"Peripheral Port Short Circuit\",\r\n    \"Churn Output Overload\", \"Abnormal PV Module Configuration\"\r\n];\r\n\r\nvar severityLevels = [\r\n    \"MAJOR\", \"MAJOR\", \"MAJOR\", \"MINOR\",\r\n    \"MAJOR\", \"MINOR\", \"WARNING\", \"MINOR\",\r\n    \"MAJOR\", \"MINOR\", \"MAJOR\", \"MAJOR\",\r\n    \"MAJOR\", \"WARNING\", \"MAJOR\", \"MAJOR\"\r\n];\r\n\r\n\r\nvar alarmArray = [];\r\nvar activeAlarmCount = 0;\r\n\r\nfor (var i = 0; i < alarmDescriptions.length; i++) {\r\n    var attributeName = 'al_st2_' + alarmDescriptions[i]\r\n        .replace(/\\s+/g, '_')\r\n        .replace(/[^a-zA-Z0-9_]/g, ''); // Remove any characters that aren't alphanumeric or underscore\r\n    var value = ((alarmStatus & (1 << i)) !== 0) ? 1 : 0;\r\n\r\n    if (value === 1) {\r\n        activeAlarmCount++;\r\n    }\r\n\r\n    var alarmObject = {};\r\n    alarmObject[attributeName] = {\r\n        value: value,\r\n        severity: severityLevels[i]\r\n    };\r\n    alarmArray.push(alarmObject);\r\n}\r\n\r\nreturn {\r\n    msg: alarmArray,\r\n    metadata: {\r\n        deviceType: metadata.deviceType ,\r\n        deviceName: metadata.deviceName ,\r\n        ts: metadata.ts\r\n    },\r\n    msgType: msgType || \"POST_TELEMETRY_REQUEST\"\r\n};\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772084634424,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "1836dac5-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "dividing alarm2 by checking value",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1157,
+        "layoutY" : 1003
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772084634424,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183701d0-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "sliptting alarm2",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbSplitArrayMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1055,
+        "layoutY" : 1083
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Function to convert alarm key to a more readable format\r\nfunction formatAlarmName(key) {\r\n    return key.replace('al_st2_', '').replace(/_/g, ' ');\r\n}\r\n\r\nvar alarmKey = Object.keys(msg)[0]; // Get the first (and only) key\r\nvar alarmDetails = msg[alarmKey]; // Access the value for the key\r\nvar alarmValue = alarmDetails.value; // Extract the 'value'\r\nvar severity = alarmDetails.severity; // Extract the 'severity'\r\n\r\n// Initialize existing metadata if not defined\r\nvar updatedMetadata = metadata || {};\r\n\r\n// Format the alarm message based on its status\r\nvar alarmMessage = formatAlarmName(alarmKey) + (alarmValue === 1 ? \" is active\" : \" is cleared\");\r\n\r\n// Merge existing metadata with new alarm details\r\nObject.assign(updatedMetadata, {\r\n    deviceType: \"default\", // Default device type\r\n    alarmType: alarmKey,\r\n    alarmStatus: alarmValue.toString(), // Convert to string for consistency\r\n    severityState: severity,\r\n    alarmMessage: alarmMessage,\r\n    deviceName: \"Test Device\", // Example device name\r\n    ts: metadata.ts || Date.now() // Add timestamp\r\n});\r\n\r\n// Return the result in the desired format\r\nreturn {\r\n    msg: msg,\r\n    metadata: updatedMetadata,\r\n    msgType: \"ALARM\"\r\n};\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183701d1-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "add alarm type to the alarm2",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1053,
+        "layoutY" : 1156
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return msg.temperature > 20;",
+        "tbelScript" : "return metadata.alarmStatus > 0"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183701d2-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "active or not",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1057,
+        "layoutY" : 1231
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : false,
+        "alarmType" : "${alarmMessage}",
+        "severity" : "${severityState}",
+        "propagate" : false,
+        "relationTypes" : [ ],
+        "propagateToOwner" : false,
+        "propagateToOwnerHierarchy" : false,
+        "propagateToTenant" : false,
+        "dynamicSeverity" : true
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183701d3-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "Create alarm2",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1291,
+        "layoutY" : 1078
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Function to convert alarm key to a more readable format\r\nfunction formatAlarmName(key) {\r\n    return key.replace('al_st2_', '').replace(/_/g, ' ');\r\n}\r\n\r\nvar alarmKey = Object.keys(msg)[0]; // Get the first (and only) key\r\nvar alarmDetails = msg[alarmKey]; // Access the value for the key\r\nvar alarmValue = alarmDetails.value; // Extract the 'value'\r\nvar severity = alarmDetails.severity; // Extract the 'severity'\r\n\r\n// Initialize existing metadata if not defined\r\nvar updatedMetadata = metadata || {};\r\n\r\n// Determine the alarm message and clear status\r\nvar isCleared = alarmValue === 0;\r\n// var alarmMessage = formatAlarmName(alarmKey) + (isCleared ? \" is cleared\" : \" is active\");\r\nvar alarmMessage = formatAlarmName(alarmKey) + \" is active\";\r\n\r\n// Merge existing metadata with new alarm details\r\nObject.assign(updatedMetadata, {\r\n    deviceType: \"default\", // Default device type\r\n    alarmType: alarmKey,\r\n    alarmClearStatus: isCleared ? \"1\" : \"0\", // Convert to string for consistency\r\n    severity: severity,\r\n    alarmMessage: alarmMessage,\r\n    deviceName: \"Test Device\", // Example device name\r\n    ts: metadata.ts || Date.now() // Add timestamp\r\n});\r\n\r\n// Return the result in the desired format\r\nreturn {\r\n    msg: msg,\r\n    metadata: updatedMetadata,\r\n    msgType: \"ALARM\"\r\n};\r\n",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183701d4-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "add alarm type to the alarm when alarm is off",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1287,
+        "layoutY" : 1152
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return metadata.alarmClearStatus >0",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183701d5-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "active or not",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1291,
+        "layoutY" : 1227
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmType" : "${alarmMessage}"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183701d6-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "clear alarm2",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1701,
+        "layoutY" : 798
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return msg.alarm_3 >= 0;",
+        "tbelScript" : "return msg.p341_alarmStatus1 >= 0;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183701d7-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "filter inverter alarm3 present",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1700,
+        "layoutY" : 936
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var alarmStatus = msg.alarm_3;\r\nvar alarmDescriptions = [\r\n    \"Optimizer Fault\",\r\n    \"Built-in PID Operation Abnormal\",\r\n    \"High Input String Voltage to Ground\",\r\n    \"External Fan Abnormal\",\r\n    \"Battery Reverse Connection\",\r\n    \"On-grid/Off-grid Controller Abnormal\",\r\n    \"PV String Loss\",\r\n    \"Internal Fan Abnormal\",\r\n    \"DC Protection Unit Abnormal\",\r\n    \"EL Unit Abnormal\",\r\n    \"Active Adjustment Instruction Abnormal\",\r\n    \"Reactive Adjustment Instruction Abnormal\",\r\n    \"CT Wiring Abnormal\",\r\n    \"DC Arc Fault (ADMC Alarm to Be Cleared Manually)\",\r\n    \"DC Switch Abnormal\",\r\n    \"Allowable Discharge Capacity of the Battery is Low\"\r\n];\r\n\r\nvar severityLevels = [\r\n    \"WARNING\", \"MINOR\", \"MAJOR\", \"MAJOR\",\r\n    \"MAJOR\", \"MAJOR\", \"WARNING\", \"MAJOR\",\r\n    \"MAJOR\", \"MINOR\", \"MAJOR\", \"MAJOR\",\r\n    \"MAJOR\", \"MAJOR\", \"MINOR\", \"WARNING\"\r\n];\r\n\r\n\r\nvar alarmArray = [];\r\nvar activeAlarmCount = 0;\r\n\r\nfor (var i = 0; i < 16; i++) {\r\n    var attributeName = 'al_st3_' + alarmDescriptions[i]\r\n        .replace(/\\s+/g, '_')\r\n        .replace(/[^a-zA-Z0-9_]/g, ''); // Remove any characters that aren't alphanumeric or underscore\r\n    var value = ((alarmStatus & (1 << i)) !== 0) ? 1 : 0;\r\n\r\n    if (value === 1) {\r\n        activeAlarmCount++;\r\n    }\r\n\r\n    var alarmObject = {};\r\n    alarmObject[attributeName] = {\r\n        value: value,\r\n        severity: severityLevels[i]\r\n    };\r\n    alarmArray.push(alarmObject);\r\n}\r\n\r\nreturn {\r\n    msg: alarmArray,\r\n    metadata: {\r\n        deviceType: metadata.deviceType ,\r\n        deviceName: metadata.deviceName ,\r\n        ts: metadata.ts\r\n    },\r\n    msgType: msgType || \"POST_TELEMETRY_REQUEST\"\r\n};\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183728e0-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "dividing alarm3 by checking value",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1698,
+        "layoutY" : 1010
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183728e1-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "sliptting alarm3",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbSplitArrayMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1596,
+        "layoutY" : 1090
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Function to convert alarm key to a more readable format\r\nfunction formatAlarmName(key) {\r\n    return key.replace('al_st3_', '').replace(/_/g, ' ');\r\n}\r\n\r\nvar alarmKey = Object.keys(msg)[0]; // Get the first (and only) key\r\nvar alarmDetails = msg[alarmKey]; // Access the value for the key\r\nvar alarmValue = alarmDetails.value; // Extract the 'value'\r\nvar severity = alarmDetails.severity; // Extract the 'severity'\r\n\r\n// Initialize existing metadata if not defined\r\nvar updatedMetadata = metadata || {};\r\n\r\n// Format the alarm message based on its status\r\nvar alarmMessage = formatAlarmName(alarmKey) + (alarmValue === 1 ? \" is active\" : \" is cleared\");\r\n\r\n// Merge existing metadata with new alarm details\r\nObject.assign(updatedMetadata, {\r\n    deviceType: \"default\", // Default device type\r\n    alarmType: alarmKey,\r\n    alarmStatus: alarmValue.toString(), // Convert to string for consistency\r\n    severityState: severity,\r\n    alarmMessage: alarmMessage,\r\n    deviceName: \"Test Device\", // Example device name\r\n    ts: metadata.ts || Date.now() // Add timestamp\r\n});\r\n\r\n// Return the result in the desired format\r\nreturn {\r\n    msg: msg,\r\n    metadata: updatedMetadata,\r\n    msgType: \"ALARM\"\r\n};\r\n",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183728e2-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "add alarm type to the alarm",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1594,
+        "layoutY" : 1163
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return msg.temperature > 20;",
+        "tbelScript" : "return metadata.alarmStatus > 0"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183728e3-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "active or not",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1598,
+        "layoutY" : 1238
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "useMessageAlarmData" : false,
+        "overwriteAlarmDetails" : false,
+        "alarmType" : "${alarmMessage}",
+        "severity" : "${severityState}",
+        "propagate" : false,
+        "relationTypes" : [ ],
+        "propagateToOwner" : false,
+        "propagateToOwnerHierarchy" : false,
+        "propagateToTenant" : false,
+        "dynamicSeverity" : true
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183728e4-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "Create alarm3",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbCreateAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1832,
+        "layoutY" : 1085
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Function to convert alarm key to a more readable format\r\nfunction formatAlarmName(key) {\r\n    return key.replace('al_st3_', '').replace(/_/g, ' ');\r\n}\r\n\r\nvar alarmKey = Object.keys(msg)[0]; // Get the first (and only) key\r\nvar alarmDetails = msg[alarmKey]; // Access the value for the key\r\nvar alarmValue = alarmDetails.value; // Extract the 'value'\r\nvar severity = alarmDetails.severity; // Extract the 'severity'\r\n\r\n// Initialize existing metadata if not defined\r\nvar updatedMetadata = metadata || {};\r\n\r\n// Determine the alarm message and clear status\r\nvar isCleared = alarmValue === 0;\r\n// var alarmMessage = formatAlarmName(alarmKey) + (isCleared ? \" is cleared\" : \" is active\");\r\nvar alarmMessage = formatAlarmName(alarmKey) + \" is active\";\r\n\r\n// Merge existing metadata with new alarm details\r\nObject.assign(updatedMetadata, {\r\n    deviceType: \"default\", // Default device type\r\n    alarmType: alarmKey,\r\n    alarmClearStatus: isCleared ? \"1\" : \"0\", // Convert to string for consistency\r\n    severity: severity,\r\n    alarmMessage: alarmMessage,\r\n    deviceName: \"Test Device\", // Example device name\r\n    ts: metadata.ts || Date.now() // Add timestamp\r\n});\r\n\r\n// Return the result in the desired format\r\nreturn {\r\n    msg: msg,\r\n    metadata: updatedMetadata,\r\n    msgType: \"ALARM\"\r\n};\r\n",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183728e5-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "add alarm type to the alarm when alarm is off",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1828,
+        "layoutY" : 1159
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return metadata.alarmClearStatus >0",
+        "tbelScript" : ""
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183728e6-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "active or not",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1832,
+        "layoutY" : 1234
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "alarmDetailsBuildJs" : "var details = {};\nif (metadata.prevAlarmDetails) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    delete metadata.prevAlarmDetails;\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmDetailsBuildTbel" : "var details = {};\nif (metadata.prevAlarmDetails != null) {\n    details = JSON.parse(metadata.prevAlarmDetails);\n    //remove prevAlarmDetails from metadata\n    metadata.remove('prevAlarmDetails');\n    //now metadata is the same as it comes IN this rule node\n}\n\n\nreturn details;",
+        "alarmType" : "${alarmMessage}"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183728e7-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "clear alarm3",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbClearAlarmNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1751,
+        "layoutY" : 545
+      },
+      "configuration" : {
+        "messageTypes" : [ "POST_TELEMETRY_REQUEST" ]
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772082761175,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "183728e8-1239-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "Filter Post Telemetry",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 1447,
+        "layoutY" : 540
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "defaultTTL" : 0,
+        "useServerTs" : null
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "841c53b0-123d-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "Save Timeseries",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1444,
+        "layoutY" : 35
+      },
+      "configuration" : {
+        "scope" : "CLIENT_SCOPE",
+        "notifyDevice" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "841c53b1-123d-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "Save Attributes",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1010,
+        "layoutY" : 170
+      },
+      "configuration" : {
+        "version" : 0
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "841c53b2-123d-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "Message Type Switch",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1443,
+        "layoutY" : 134
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);",
+        "tbelScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "841c53b3-123d-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "Log RPC from Device",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1443,
+        "layoutY" : 247
+      },
+      "configuration" : {
+        "scriptLang" : "TBEL",
+        "jsScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);",
+        "tbelScript" : "return '\\nIncoming message:\\n' + JSON.stringify(msg) + '\\nIncoming metadata:\\n' + JSON.stringify(metadata);"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "841c7ac0-123d-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "Log Other",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.action.TbLogNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 1443,
+        "layoutY" : 336
+      },
+      "configuration" : {
+        "timeoutInSeconds" : 60
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "841c7ac1-123d-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "RPC Call Request",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rpc.TbSendRPCRequestNode"
+    }, {
+      "additionalInfo" : {
+        "description" : null,
+        "layoutX" : 653,
+        "layoutY" : 149
+      },
+      "configuration" : {
+        "originatorTypes" : [ "ENTITY_GROUP" ]
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "841c7ac2-123d-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "Is Entity Group",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbOriginatorTypeFilterNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 770,
+        "layoutY" : 33
+      },
+      "configuration" : {
+        "messageTypes" : [ "POST_ATTRIBUTES_REQUEST", "RPC_CALL_FROM_SERVER_TO_DEVICE" ]
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "841c7ac3-123d-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "Post attributes or RPC request",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbMsgTypeFilterNode"
+    }, {
+      "additionalInfo" : {
+        "layoutX" : 1071,
+        "layoutY" : 29
+      },
+      "configuration" : {
+        "entityGroupId" : null,
+        "entityGroupIsMessageOriginator" : true
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "841c7ac4-123d-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "Duplicate To Group Entities",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbDuplicateMsgToGroupNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Process incoming messages from devices with the alarm rules defined in the device profile. Dispatch all incoming messages with \"Success\" relation type.",
+        "layoutX" : 348,
+        "layoutY" : 149
+      },
+      "configuration" : {
+        "persistAlarmRulesState" : false,
+        "fetchAlarmRulesStateOnStart" : "false"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : true
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "841c7ac5-123d-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "Device Profile Node",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.profile.TbDeviceProfileNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "Forwards message to the \"Generate Report\" rule chain",
+        "layoutX" : 1447,
+        "layoutY" : 443
+      },
+      "configuration" : {
+        "ruleChainId" : "d7677de0-3e7e-11ef-b79b-714fa98e52cd",
+        "forwardMsgToDefaultRuleChain" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "841ca1d0-123d-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "Generate Report",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.flow.TbRuleChainInputNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 589,
+        "layoutY" : 854
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var gridFaultKeys = [\r\n  'al_st1_Grid_Loss',\r\n  'al_st1_Grid_Undervoltage',\r\n  'al_st1_Grid_Overvoltage',\r\n  'al_st1_Grid_Voltage_Imbalance',\r\n  'al_st1_Grid_Overfrequency',\r\n  'al_st1_Grid_Underfrequency',\r\n  'al_st1_Unstable_Grid_Frequency'\r\n];\r\n\r\nvar alarmArray = msg; // msg is the array from telemetry\r\nvar hasGridFault = false;\r\n\r\nfor (var i = 0; i < alarmArray.length; i++) {\r\n  var alarmObj = alarmArray[i];\r\n  var keys = Object.keys(alarmObj);\r\n\r\n  for (var j = 0; j < keys.length; j++) {\r\n    var key = keys[j];\r\n    if (gridFaultKeys.indexOf(key) !== -1 && alarmObj[key].value === 1) {\r\n      hasGridFault = true;\r\n      break;\r\n    }\r\n  }\r\n  if (hasGridFault) break;\r\n}\r\n\r\nreturn {\r\n  msg: { grid_availability: hasGridFault ? 0 : 1 },\r\n  metadata: metadata,\r\n  msgType: 'POST_TELEMETRY_REQUEST'\r\n};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772531718127,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "123d61f0-12d6-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "To calculate avalability",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1301,
+        "layoutY" : 1612
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772604703755,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "90e8ab40-12f9-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "To save sunset, sunrise data",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 656,
+        "layoutY" : 1074
+      },
+      "configuration" : {
+        "tellFailureIfAbsent" : false,
+        "fetchTo" : "METADATA",
+        "clientAttributeNames" : [ ],
+        "sharedAttributeNames" : [ ],
+        "serverAttributeNames" : [ "grid_availability", "grid_lost_time", "grid_total_lost_ms", "sun_daylight_ms", "sun_last_updated", "grid_last_reset_date" ],
+        "latestTsKeyNames" : [ ],
+        "getLatestValueWithTs" : false
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772616840175,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "77f96ae0-1397-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "originate grid_avalibility, grid_lost_time",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.metadata.TbGetAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 613,
+        "layoutY" : 1160
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "return msg.hasOwnProperty('grid_availability');",
+        "tbelScript" : "return msg.temperature > 20;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772531155345,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "77f991f0-1397-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "check grid_availability exists",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 611,
+        "layoutY" : 1230
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "function detectToggle(msg, metadata, msgType) {\r\n    var currentValue = parseInt(msg.grid_availability);\r\n    var prevRaw = metadata.ss_grid_availability || metadata.cs_grid_availability;\r\n    var previousValue = parseInt(prevRaw || '0');\r\n    if (previousValue === 1 && currentValue === 0) {\r\n        return ['GRID_LOST'];\r\n    } else if (previousValue === 0 && currentValue === 1) {\r\n        return ['GRID_RESTORED'];\r\n    }\r\n    return ['NO_CHANGE'];\r\n}\r\nreturn detectToggle(msg, metadata, msgType);",
+        "tbelScript" : "function nextRelation(metadata, msg) {\n    return ['one','nine'];\n}\nif(msgType == 'POST_TELEMETRY_REQUEST') {\n    return ['two'];\n}\nreturn nextRelation(metadata, msg);"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772531155345,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "77f9e010-1397-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "detect toggle direction",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsSwitchNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 498,
+        "layoutY" : 1366
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var now = new Date().getTime();\r\n\r\n// Sri Lanka Time = UTC + 5:30\r\nvar SL_OFFSET_MS = 5.5 * 60 * 60 * 1000;\r\nvar slDate = new Date(now + SL_OFFSET_MS);\r\nvar year = slDate.getUTCFullYear();\r\nvar month = ('0' + (slDate.getUTCMonth() + 1)).slice(-2);\r\nvar day = ('0' + slDate.getUTCDate()).slice(-2);\r\nvar hours = ('0' + slDate.getUTCHours()).slice(-2);\r\nvar minutes = ('0' + slDate.getUTCMinutes()).slice(-2);\r\nvar seconds = ('0' + slDate.getUTCSeconds()).slice(-2);\r\nvar slTimeStr = year + '-' + month + '-' + day + ' ' + '| ' + hours + ':' + minutes + ':' + seconds;\r\n\r\nvar newMsg = {\r\n    grid_lost_time: now,\r\n    grid_lost_time_readable: slTimeStr\r\n};\r\n\r\nreturn { msg: newMsg, metadata: metadata, msgType: 'POST_ATTRIBUTES_REQUEST' };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772615355386,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "77fa0720-1397-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "grid lost 1->0",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 741,
+        "layoutY" : 1371
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var now = new Date().getTime();\r\n\r\n// Sri Lanka Time = UTC + 5:30\r\nvar SL_OFFSET_MS = 5.5 * 60 * 60 * 1000;\r\n\r\nfunction toSLTime(timestamp) {\r\n    var d = new Date(timestamp + SL_OFFSET_MS);\r\n    var year = d.getUTCFullYear();\r\n    var month = ('0' + (d.getUTCMonth() + 1)).slice(-2);\r\n    var day = ('0' + d.getUTCDate()).slice(-2);\r\n    var hours = ('0' + d.getUTCHours()).slice(-2);\r\n    var minutes = ('0' + d.getUTCMinutes()).slice(-2);\r\n    var seconds = ('0' + d.getUTCSeconds()).slice(-2);\r\n    return year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds;\r\n}\r\n\r\n// Read grid_lost_time from metadata (loaded by Originator Attributes node)\r\n// Try both prefixes: ss_ and cs_\r\nvar gridLostTimeRaw = metadata.ss_grid_lost_time || metadata.cs_grid_lost_time || '0';\r\nvar gridLostTime = parseInt(gridLostTimeRaw);\r\n\r\n// Read existing total lost ms\r\nvar totalLostMsRaw = metadata.ss_grid_total_lost_ms || metadata.cs_grid_total_lost_ms || '0';\r\nvar totalLostMs = parseInt(totalLostMsRaw);\r\n\r\n// Calculate downtime for this outage\r\nvar downtimeMs = 0;\r\nif (gridLostTime > 0 && now > gridLostTime) {\r\n    downtimeMs = now - gridLostTime;\r\n}\r\n\r\n// Add to total\r\ntotalLostMs = totalLostMs + downtimeMs;\r\n\r\n// Calculate downtime in readable format\r\nvar downtimeSeconds = Math.floor(downtimeMs / 1000);\r\nvar downtimeMinutes = Math.floor(downtimeSeconds / 60);\r\nvar downtimeHours = Math.floor(downtimeMinutes / 60);\r\nvar remainingMinutes = downtimeMinutes % 60;\r\nvar remainingSeconds = downtimeSeconds % 60;\r\nvar downtimeReadable = downtimeHours + 'h ' + remainingMinutes + 'm ' + remainingSeconds + 's';\r\n\r\n// Calculate availability percentage using ACTUAL DAYLIGHT HOURS\r\n// sun_daylight_ms is saved daily by the Sunrise/Sunset API nodes\r\nvar sunDaylightRaw = metadata.ss_sun_daylight_ms || metadata.cs_sun_daylight_ms || '0';\r\nvar sunDaylightMs = parseInt(sunDaylightRaw);\r\n\r\n// Use sun daylight hours if available, otherwise fallback to 24h\r\nvar windowMs = (sunDaylightMs > 0) ? sunDaylightMs : (24 * 60 * 60 * 1000);\r\n\r\nvar availabilityPercent = 100.0;\r\nif (totalLostMs > 0) {\r\n    availabilityPercent = parseFloat((((windowMs - totalLostMs) / windowMs) * 100).toFixed(2));\r\n}\r\nif (availabilityPercent < 0) { availabilityPercent = 0; }\r\nif (availabilityPercent > 100) { availabilityPercent = 100; }\r\n\r\n// Total lost in readable format\r\nvar totalSeconds = Math.floor(totalLostMs / 1000);\r\nvar totalMinutes = Math.floor(totalSeconds / 60);\r\nvar totalHours = Math.floor(totalMinutes / 60);\r\nvar totalDays = Math.floor(totalHours / 24);\r\nvar tRemHours = totalHours % 24;\r\nvar tRemMinutes = totalMinutes % 60;\r\nvar tRemSeconds = totalSeconds % 60;\r\nvar totalLostReadable = '';\r\nif (totalDays > 0) { totalLostReadable += totalDays + 'd '; }\r\nif (tRemHours > 0 || totalDays > 0) { totalLostReadable += tRemHours + 'h '; }\r\ntotalLostReadable += tRemMinutes + 'm ' + tRemSeconds + 's';\r\n\r\nvar newMsg = {\r\n    grid_on_time: now,\r\n    grid_on_time_readable: toSLTime(now),\r\n    grid_last_downtime_ms: downtimeMs,\r\n    grid_last_downtime_minutes: parseFloat((downtimeMs / 60000).toFixed(2)),\r\n    grid_last_downtime_readable: downtimeReadable,\r\n    grid_total_lost_ms: totalLostMs,\r\n    grid_total_lost_readable: totalLostReadable,\r\n    grid_availability_percent: availabilityPercent,\r\n    // Debug info - remove these after confirming it works\r\n    // debug_grid_lost_time_raw: gridLostTimeRaw,\r\n    // debug_grid_lost_time_parsed: gridLostTime,\r\n    // debug_now: now,\r\n    // debug_calculated_diff: downtimeMs\r\n};\r\n\r\nreturn { msg: newMsg, metadata: metadata, msgType: 'POST_ATTRIBUTES_REQUEST' };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772615355386,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "77fa0721-1397-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "grid restored 0 ->1",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1730,
+        "layoutY" : 1613
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772172422226,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "26d09050-139a-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "to save",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 606,
+        "layoutY" : 1535
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772615355386,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "4133a130-139a-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "To save availibility time",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 874,
+        "layoutY" : 855
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772180694314,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "585a0300-13ad-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "to save grid availibility",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 586,
+        "layoutY" : 919
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var gridFaultKeys = [\r\n  'al_st1_Grid_Loss',\r\n  'al_st1_Grid_Undervoltage',\r\n  'al_st1_Grid_Overvoltage',\r\n  'al_st1_Grid_Voltage_Imbalance',\r\n  'al_st1_Grid_Overfrequency',\r\n  'al_st1_Grid_Underfrequency',\r\n  'al_st1_Unstable_Grid_Frequency'\r\n];\r\n\r\nvar alarmArray = msg; // msg is the array from telemetry\r\nvar hasGridFault = false;\r\n\r\nfor (var i = 0; i < alarmArray.length; i++) {\r\n  var alarmObj = alarmArray[i];\r\n  var keys = Object.keys(alarmObj);\r\n\r\n  for (var j = 0; j < keys.length; j++) {\r\n    var key = keys[j];\r\n    if (gridFaultKeys.indexOf(key) !== -1 && alarmObj[key].value === 1) {\r\n      hasGridFault = true;\r\n      break;\r\n    }\r\n  }\r\n  if (hasGridFault) break;\r\n}\r\n\r\nreturn {\r\n  msg: { grid_availability: hasGridFault ? 0 : 1 },\r\n  metadata: metadata,\r\n  msgType: 'POST_ATTRIBUTES_REQUEST'\r\n};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772531705673,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "c994b780-13ae-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "To calculate avalability",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 873,
+        "layoutY" : 922
+      },
+      "configuration" : {
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        },
+        "scope" : "SERVER_SCOPE",
+        "notifyDevice" : false,
+        "sendAttributesUpdatedNotification" : false,
+        "updateAttributesOnlyOnValueChange" : true
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772181285239,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "c994b781-13ae-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "To save Grid avalibility",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgAttributesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1294,
+        "layoutY" : 1391
+      },
+      "configuration" : {
+        "restEndpointUrlPattern" : "https://api.sunrise-sunset.org/json?lat=6.9271&lng=79.8612&formatted=0",
+        "requestMethod" : "GET",
+        "useSimpleClientHttpFactory" : true,
+        "parseToPlainText" : false,
+        "ignoreRequestBody" : false,
+        "enableProxy" : false,
+        "useSystemProxyProperties" : false,
+        "proxyScheme" : null,
+        "proxyHost" : null,
+        "proxyPort" : 0,
+        "proxyUser" : null,
+        "proxyPassword" : null,
+        "readTimeoutMs" : 0,
+        "maxParallelRequestsCount" : 0,
+        "headers" : { },
+        "credentials" : {
+          "type" : "anonymous"
+        },
+        "maxInMemoryBufferSizeInKb" : 256
+      },
+      "configurationVersion" : 3,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772615355386,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "37000050-16d8-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "fetch sunset, sunrise",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.rest.TbRestApiCallNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1299,
+        "layoutY" : 1499
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// The REST API Call node returns the response body as msg\r\n// Some TB versions pass it as a string, some as parsed JSON\r\nvar response = msg;\r\nif (typeof response === 'string') {\r\n    response = JSON.parse(response);\r\n}\r\n\r\n// Sri Lanka offset for readable times\r\nvar SL_OFFSET_MS = 5.5 * 60 * 60 * 1000;\r\n\r\nvar sunRiseMs = 0;\r\nvar sunSetMs = 0;\r\nvar dayLengthSec = 0;\r\nvar sunRiseReadable = 'N/A';\r\nvar sunSetReadable = 'N/A';\r\n\r\nif (response && response.status === 'OK' && response\r\n    .results) {\r\n    var r = response.results;\r\n\r\n    // day_length is in seconds\r\n    dayLengthSec = parseInt(r.day_length) || 0;\r\n\r\n    // Parse ISO timestamps\r\n    if (r.sunrise) {\r\n        sunRiseMs = new Date(r.sunrise).getTime();\r\n        var slRise = new Date(sunRiseMs + SL_OFFSET_MS);\r\n        sunRiseReadable = ('0' + slRise.getUTCHours())\r\n            .slice(-2) + ':' +\r\n            ('0' + slRise.getUTCMinutes()).slice(-2);\r\n    }\r\n    if (r.sunset) {\r\n        sunSetMs = new Date(r.sunset).getTime();\r\n        var slSet = new Date(sunSetMs + SL_OFFSET_MS);\r\n        sunSetReadable = ('0' + slSet.getUTCHours()).slice(-\r\n                2) + ':' +\r\n            ('0' + slSet.getUTCMinutes()).slice(-2);\r\n    }\r\n}\r\n\r\n// Daylight in milliseconds\r\nvar daylightMs = dayLengthSec * 1000;\r\n\r\n// Readable daylight duration\r\nvar dlHours = Math.floor(dayLengthSec / 3600);\r\nvar dlMins = Math.floor((dayLengthSec % 3600) / 60);\r\nvar daylightReadable = dlHours + 'h ' + dlMins + 'm';\r\n\r\nvar newMsg = {\r\n    sun_rise_ms: sunRiseMs,\r\n    sun_set_ms: sunSetMs,\r\n    sun_rise_readable: sunRiseReadable,\r\n    sun_set_readable: sunSetReadable,\r\n    sun_daylight_sec: dayLengthSec,\r\n    // sun_daylight_ms: daylightMs,\r\n    sun_daylight_readable: daylightReadable,\r\n    sun_last_updated: new Date().getTime()\r\n};\r\n\r\n// Clean metadata — strip HTTP response headers added by REST API Call node\r\n// (Content-Type, Server, X-Frame-Options, etc. pollute the metadata)\r\n// Only keep the essential TB fields needed for Save Attributes to work\r\nvar cleanMetadata = {\r\n    deviceName: metadata.deviceName || '',\r\n    deviceType: metadata.deviceType || ''\r\n};\r\n\r\nreturn {\r\n    msg: newMsg,\r\n    metadata: cleanMetadata,\r\n    msgType: 'POST_ATTRIBUTES_REQUEST'\r\n};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772614018972,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "9d6c1b40-16dc-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "parse sunrise, sunset",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1518,
+        "layoutY" : 1614
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : null,
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "3df1a8a0-16e7-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "to save",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1027,
+        "layoutY" : 1391
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "\r\n\r\nvar sunLastUpdated = parseInt(metadata.ss_sun_last_updated || metadata.cs_sun_last_updated || '0');\r\nvar now = new Date().getTime();\r\nvar TWENTY_HOURS_MS = 20 * 60 * 60 * 1000;\r\n\r\n// Return true if sun data is missing or older than 20 hours\r\nreturn (now - sunLastUpdated) > TWENTY_HOURS_MS;",
+        "tbelScript" : "return msg.temperature > 20;"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772614018972,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "52fcb200-179e-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "sun data stale check",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.filter.TbJsFilterNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1512,
+        "layoutY" : 1501
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// The REST API Call node returns the response body as msg\r\n// Some TB versions pass it as a string, some as parsed JSON\r\nvar response = msg;\r\nif (typeof response === 'string') {\r\n    response = JSON.parse(response);\r\n}\r\n\r\n// Sri Lanka offset for readable times\r\nvar SL_OFFSET_MS = 5.5 * 60 * 60 * 1000;\r\n\r\nvar sunRiseMs = 0;\r\nvar sunSetMs = 0;\r\nvar dayLengthSec = 0;\r\nvar sunRiseReadable = 'N/A';\r\nvar sunSetReadable = 'N/A';\r\n\r\nif (response && response.status === 'OK' && response\r\n    .results) {\r\n    var r = response.results;\r\n\r\n    // day_length is in seconds\r\n    dayLengthSec = parseInt(r.day_length) || 0;\r\n\r\n    // Parse ISO timestamps\r\n    if (r.sunrise) {\r\n        sunRiseMs = new Date(r.sunrise).getTime();\r\n        var slRise = new Date(sunRiseMs + SL_OFFSET_MS);\r\n        sunRiseReadable = ('0' + slRise.getUTCHours())\r\n            .slice(-2) + ':' +\r\n            ('0' + slRise.getUTCMinutes()).slice(-2);\r\n    }\r\n    if (r.sunset) {\r\n        sunSetMs = new Date(r.sunset).getTime();\r\n        var slSet = new Date(sunSetMs + SL_OFFSET_MS);\r\n        sunSetReadable = ('0' + slSet.getUTCHours()).slice(-\r\n                2) + ':' +\r\n            ('0' + slSet.getUTCMinutes()).slice(-2);\r\n    }\r\n}\r\n\r\n// Daylight in milliseconds\r\nvar daylightMs = dayLengthSec * 1000;\r\n\r\n// Readable daylight duration\r\nvar dlHours = Math.floor(dayLengthSec / 3600);\r\nvar dlMins = Math.floor((dayLengthSec % 3600) / 60);\r\nvar daylightReadable = dlHours + 'h ' + dlMins + 'm';\r\n\r\nvar newMsg = {\r\n    // sun_rise_ms: sunRiseMs,\r\n    // sun_set_ms: sunSetMs,\r\n    // sun_rise_readable: sunRiseReadable,\r\n    // sun_set_readable: sunSetReadable,\r\n    sun_daylight_sec: dayLengthSec,\r\n    // sun_daylight_ms: daylightMs,\r\n    // sun_daylight_readable: daylightReadable,\r\n    // sun_last_updated: new Date().getTime()\r\n};\r\n\r\n// Clean metadata — strip HTTP response headers added by REST API Call node\r\n// (Content-Type, Server, X-Frame-Options, etc. pollute the metadata)\r\n// Only keep the essential TB fields needed for Save Attributes to work\r\nvar cleanMetadata = {\r\n    deviceName: metadata.deviceName || '',\r\n    deviceType: metadata.deviceType || ''\r\n};\r\n\r\nreturn {\r\n    msg: newMsg,\r\n    metadata: cleanMetadata,\r\n    msgType: 'POST_TELEMETRY_REQUEST'\r\n};",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772615355386,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6f8cada0-17a1-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "parse sunrise, sunset",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 863,
+        "layoutY" : 1496
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "var now = new Date().getTime();\r\n\r\n// Sri Lanka Time = UTC + 5:30\r\nvar SL_OFFSET_MS = 5.5 * 60 * 60 * 1000;\r\n\r\nfunction toSLTime(timestamp) {\r\n    var d = new Date(timestamp + SL_OFFSET_MS);\r\n    var year = d.getUTCFullYear();\r\n    var month = ('0' + (d.getUTCMonth() + 1)).slice(-2);\r\n    var day = ('0' + d.getUTCDate()).slice(-2);\r\n    var hours = ('0' + d.getUTCHours()).slice(-2);\r\n    var minutes = ('0' + d.getUTCMinutes()).slice(-2);\r\n    var seconds = ('0' + d.getUTCSeconds()).slice(-2);\r\n    return year + '-' + month + '-' + day + ' ' + hours + ':' + minutes + ':' + seconds;\r\n}\r\n\r\n// Read grid_lost_time from metadata (loaded by Originator Attributes node)\r\n// Try both prefixes: ss_ and cs_\r\nvar gridLostTimeRaw = metadata.ss_grid_lost_time || metadata.cs_grid_lost_time || '0';\r\nvar gridLostTime = parseInt(gridLostTimeRaw);\r\n\r\n// Read existing total lost ms\r\nvar totalLostMsRaw = metadata.ss_grid_total_lost_ms || metadata.cs_grid_total_lost_ms || '0';\r\nvar totalLostMs = parseInt(totalLostMsRaw);\r\n\r\n// Calculate downtime for this outage\r\nvar downtimeMs = 0;\r\nif (gridLostTime > 0 && now > gridLostTime) {\r\n    downtimeMs = now - gridLostTime;\r\n}\r\n\r\n// Add to total\r\ntotalLostMs = totalLostMs + downtimeMs;\r\n\r\n// Calculate downtime in readable format\r\nvar downtimeSeconds = Math.floor(downtimeMs / 1000);\r\nvar downtimeMinutes = Math.floor(downtimeSeconds / 60);\r\nvar downtimeHours = Math.floor(downtimeMinutes / 60);\r\nvar remainingMinutes = downtimeMinutes % 60;\r\nvar remainingSeconds = downtimeSeconds % 60;\r\nvar downtimeReadable = downtimeHours + 'h ' + remainingMinutes + 'm ' + remainingSeconds + 's';\r\n\r\n// Calculate availability percentage using ACTUAL DAYLIGHT HOURS\r\n// sun_daylight_ms is saved daily by the Sunrise/Sunset API nodes\r\nvar sunDaylightRaw = metadata.ss_sun_daylight_ms || metadata.cs_sun_daylight_ms || '0';\r\nvar sunDaylightMs = parseInt(sunDaylightRaw);\r\n\r\n// Use sun daylight hours if available, otherwise fallback to 12h\r\nvar windowMs = (sunDaylightMs > 0) ? sunDaylightMs : (12 * 60 * 60 * 1000);\r\n\r\nvar availabilityPercent = 100.0;\r\nif (totalLostMs > 0) {\r\n    availabilityPercent = parseFloat((((windowMs - totalLostMs) / windowMs) * 100).toFixed(2));\r\n}\r\nif (availabilityPercent < 0) { availabilityPercent = 0; }\r\nif (availabilityPercent > 100) { availabilityPercent = 100; }\r\n\r\n// Total lost in readable format\r\nvar totalSeconds = Math.floor(totalLostMs / 1000);\r\nvar totalMinutes = Math.floor(totalSeconds / 60);\r\nvar totalHours = Math.floor(totalMinutes / 60);\r\nvar totalDays = Math.floor(totalHours / 24);\r\nvar tRemHours = totalHours % 24;\r\nvar tRemMinutes = totalMinutes % 60;\r\nvar tRemSeconds = totalSeconds % 60;\r\nvar totalLostReadable = '';\r\nif (totalDays > 0) { totalLostReadable += totalDays + 'd '; }\r\nif (tRemHours > 0 || totalDays > 0) { totalLostReadable += tRemHours + 'h '; }\r\ntotalLostReadable += tRemMinutes + 'm ' + tRemSeconds + 's';\r\n\r\nvar newMsg = {\r\n    // grid_on_time: now,\r\n    // grid_on_time_readable: toSLTime(now),\r\n    // grid_last_downtime_ms: downtimeMs,\r\n    // grid_last_downtime_minutes: parseFloat((downtimeMs / 60000).toFixed(2)),\r\n    grid_last_downtime_readable: downtimeReadable,\r\n    grid_total_lost_ms: totalLostMs,\r\n    grid_total_lost_readable: totalLostReadable,\r\n    grid_availability_percent: availabilityPercent,\r\n    // Debug info - remove these after confirming it works\r\n    // debug_grid_lost_time_raw: gridLostTimeRaw,\r\n    // debug_grid_lost_time_parsed: gridLostTime,\r\n    // debug_now: now,\r\n    // debug_calculated_diff: downtimeMs\r\n};\r\n\r\nreturn { msg: newMsg, metadata: metadata, msgType: 'POST_ATTRIBUTES_REQUEST' };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772615355386,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6f8cd4b0-17a1-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "grid restored 0 ->1",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1045,
+        "layoutY" : 1613
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 0,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "6f8cd4b1-17a1-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "to save",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1731,
+        "layoutY" : 1500
+      },
+      "configuration" : {
+        "scriptLang" : "JS",
+        "jsScript" : "// Sri Lanka Time = UTC + 5:30\r\nvar SL_OFFSET_MS = 5.5 * 60 * 60 * 1000;\r\nvar now = new Date().getTime();\r\nvar dlHours = 0;\r\nvar dlMins = 0;\r\n\r\n// Get current date in Sri Lanka (YYYY-MM-DD format)\r\nvar slNow = new Date(now + SL_OFFSET_MS);\r\nvar todaySL = slNow.getUTCFullYear() + '-' + \r\n              ('0' + (slNow.getUTCMonth() + 1)).slice(-2) + '-' + \r\n              ('0' + slNow.getUTCDate()).slice(-2);\r\n\r\nvar newMsg = {\r\n    grid_total_lost_ms: 0,\r\n    grid_total_lost_readable: dlHours + 'h ' + dlMins + 'm',\r\n    grid_availability_percent: 100,\r\n    grid_last_reset_date: todaySL,\r\n    grid_last_reset_time: now\r\n};\r\n\r\nreturn { msg: newMsg, metadata: metadata, msgType: 'POST_ATTRIBUTES_REQUEST' };",
+        "tbelScript" : "return {msg: msg, metadata: metadata, msgType: msgType};"
+      },
+      "configurationVersion" : 0,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772617346125,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "121f7ee0-17a6-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "reset daily totals",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.transform.TbTransformMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 787,
+        "layoutY" : 1820
+      },
+      "configuration" : {
+        "direction" : "FROM",
+        "relationType" : "Contains",
+        "deduplicationInSec" : 10,
+        "aggMappings" : [ {
+          "sourceScope" : "LATEST_TELEMETRY",
+          "source" : "grid_availability_percent",
+          "defaultValue" : 0,
+          "aggFunction" : "AVG",
+          "target" : "grid_availability_percent"
+        } ],
+        "outMsgType" : "POST_TELEMETRY_REQUEST"
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772620712592,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e8b25b60-17ad-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "avg of grid availibility %",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.analytics.latest.telemetry.TbAggLatestTelemetryNodeV2"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1086,
+        "layoutY" : 1818
+      },
+      "configuration" : {
+        "periodValue" : 1,
+        "periodTimeUnit" : "MINUTES",
+        "outMsgType" : "POST_TELEMETRY_REQUEST",
+        "parentEntitiesQuery" : {
+          "type" : "single",
+          "entityId" : {
+            "entityType" : "ASSET",
+            "id" : "baa26d70-e565-11f0-b68f-8f33a9d74e0c"
+          },
+          "childRelationsQuery" : {
+            "fetchLastLevelOnly" : false,
+            "direction" : "FROM",
+            "maxLevel" : 1,
+            "filters" : [ {
+              "relationType" : "Contains",
+              "entityTypes" : [ ]
+            } ]
+          }
+        },
+        "aggMappings" : [ {
+          "sourceScope" : "SERVER_SCOPE",
+          "source" : "grid_availability_percent",
+          "defaultValue" : 0,
+          "aggFunction" : "AVG",
+          "target" : "grid_availability_percent"
+        } ]
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772620712592,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e8b2a980-17ad-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "avg of grid availibility %",
+      "queueName" : "Main",
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.analytics.latest.telemetry.TbAggLatestTelemetryNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1405,
+        "layoutY" : 1886
+      },
+      "configuration" : {
+        "inputValueKey" : "grid_availability_percent",
+        "outputValueKey" : "grid_availability_percent_monthly",
+        "mathFunction" : "MAX",
+        "aggIntervalType" : "MONTH",
+        "timeZoneId" : "Asia/Colombo",
+        "aggIntervalValue" : 1,
+        "aggIntervalTimeUnit" : "HOURS",
+        "intervalPersistencePolicy" : "ON_EACH_MESSAGE",
+        "outMsgType" : "POST_TELEMETRY_REQUEST",
+        "intervalCheckValue" : 1,
+        "intervalCheckTimeUnit" : "MINUTES",
+        "statePersistencePolicy" : "ON_EACH_CHANGE",
+        "statePersistenceValue" : 1,
+        "statePersistenceTimeUnit" : "MINUTES",
+        "autoCreateIntervals" : false,
+        "periodValue" : 5,
+        "periodTimeUnit" : "MINUTES",
+        "parentEntitiesQuery" : {
+          "type" : "group",
+          "entityGroupId" : null
+        }
+      },
+      "configurationVersion" : 2,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772620712592,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "e8b2d090-17ad-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "avg of grid availibility daily %",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.analytics.incoming.TbSimpleAggMsgNode"
+    }, {
+      "additionalInfo" : {
+        "description" : "",
+        "layoutX" : 1688,
+        "layoutY" : 1811
+      },
+      "configuration" : {
+        "defaultTTL" : 0,
+        "useServerTs" : false,
+        "processingSettings" : {
+          "type" : "ON_EVERY_MESSAGE"
+        }
+      },
+      "configurationVersion" : 1,
+      "createdTime" : 0,
+      "debugSettings" : {
+        "allEnabled" : false,
+        "allEnabledUntil" : 1772620877582,
+        "failuresEnabled" : false
+      },
+      "externalId" : null,
+      "id" : {
+        "entityType" : "RULE_NODE",
+        "id" : "4b0911f0-17ae-11f1-8d01-cff7a27c53e8"
+      },
+      "name" : "to save",
+      "queueName" : null,
+      "ruleChainId" : null,
+      "singletonMode" : false,
+      "type" : "org.thingsboard.rule.engine.telemetry.TbMsgTimeseriesNode"
+    } ],
+    "ruleChainConnections" : null
+  },
+  "attributes" : {
+    "SERVER_SCOPE" : [ ]
+  }
+}
