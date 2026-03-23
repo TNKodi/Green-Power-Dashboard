@@ -35060,8 +35060,8 @@
               "nodesSortFunction" : "/**\n\n// This function is used to sort nodes of the same level. Function should compare two nodes and return \n// integer value: \n//     - less than 0 - sort nodeCtx1 to an index lower than nodeCtx2\n//     - 0 - leave nodeCtx1 and nodeCtx2 unchanged with respect to each other\n//     - greater than 0 - sort nodeCtx2 to an index lower than nodeCtx1\n\n// The following example code will sort entities first by entity type in alphabetical order then\n// by entity name in alphabetical order.\n\nvar result = nodeCtx1.entity.id.entityType.localeCompare(nodeCtx2.entity.id.entityType);\nif (result === 0) {\n    result = nodeCtx1.entity.name.localeCompare(nodeCtx2.entity.name);\n}\nreturn result;\n  \n**/"
             },
             "title" : "hierarchy darkmode",
-            "dropShadow" : true,
-            "enableFullscreen" : true,
+            "dropShadow" : false,
+            "enableFullscreen" : false,
             "titleStyle" : {
               "fontSize" : "16px",
               "fontWeight" : 400,
@@ -35096,8 +35096,23 @@
               }
             } ],
             "widgetStyle" : { },
-            "actions" : { },
-            "enableDataExport" : true,
+            "actions" : {
+              "nodeSelected" : [ {
+                "name" : "Update Dashboard",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : null,
+                "setEntityId" : true,
+                "stateEntityParamName" : "SelectedAsset",
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "94a653dc-e041-9856-1852-849ed8d5b02b"
+              } ]
+            },
+            "enableDataExport" : false,
             "widgetCss" : "",
             "pageSize" : 1024,
             "noDataDisplayMessage" : ""
@@ -35105,6 +35120,45 @@
           "row" : 0,
           "col" : 0,
           "id" : "40def845-791c-da43-d59e-2b1b3111c2aa"
+        },
+        "81619c67-aed4-6b16-ed88-a4791c5cf1d9" : {
+          "typeFullFqn" : "tenant.nav_bar_",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(255, 255, 255, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class=\"page-header\">\n\n    <!-- ═══ TOP ROW: Title + Clock ═══ -->\n    <div class=\"header-top\">\n        <div class=\"title-section\">\n            SOLAR PV PLANT MONITORING - FINANCIAL PERFORMANCE OVERVIEW\n        </div>\n        <div class=\"time-section\">\n            <span id=\"date-display\">Loading...</span>\n            <span class=\"separator\">|</span>\n            <span id=\"time-display\">--:--:--</span>\n            <span class=\"timezone\">(UTC+05:30)</span>\n        </div>\n    </div>\n\n    <!-- ═══ DIVIDER ═══ -->\n    <div class=\"header-divider\"></div>\n\n    <!-- ═══ BOTTOM ROW: Navigation Tabs ═══ -->\n    <div class=\"header-nav\">\n        <div class=\"nav-item\" data-state=\"energy_prod\">Energy &amp; Yield</div>\n        <div class=\"nav-item\" data-state=\"forecasts\">Forecasts &amp; Risk</div>\n        <div class=\"nav-item\" data-state=\"financial\">Financials</div>\n        <div class=\"nav-item\" data-state=\"esg\">ESG &amp; Carbon</div>\n        <div class=\"nav-item\" data-state=\"grid_loss\">Grid &amp; Losses</div>\n        <div class=\"nav-item\" data-state=\"portfolio\">Portfolio</div>\n    </div>\n\n</div>\n",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "Nav bar ",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "enableDataExport" : true,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "81619c67-aed4-6b16-ed88-a4791c5cf1d9"
         }
       },
       "states" : {
@@ -35408,17 +35462,18 @@
               },
               "gridSettings" : {
                 "layoutType" : "default",
-                "backgroundColor" : "#EEEEEE",
+                "backgroundColor" : "#000000",
                 "columns" : 200,
                 "margin" : 0,
-                "outerMargin" : false,
+                "outerMargin" : true,
                 "backgroundSizeMode" : "100%",
                 "minColumns" : 200,
                 "viewFormat" : "grid",
                 "autoFillHeight" : false,
                 "rowHeight" : 70,
                 "mobileAutoFillHeight" : false,
-                "mobileRowHeight" : 70
+                "mobileRowHeight" : 70,
+                "backgroundImageUrl" : "tb-image;/api/images/tenant/download_(1).png"
               }
             }
           }
@@ -35716,111 +35771,117 @@
                 "4b680f31-7955-016b-4f7b-b3ee0309f5df" : {
                   "sizeX" : 25,
                   "sizeY" : 4,
-                  "row" : 0,
+                  "row" : 12,
                   "col" : 0
                 },
                 "8cb2dd84-b527-41ac-5758-64ad0b0e0e03" : {
                   "sizeX" : 25,
                   "sizeY" : 4,
-                  "row" : 0,
+                  "row" : 12,
                   "col" : 26
                 },
                 "235c4425-a02d-f4c7-50cc-1b055af09d06" : {
                   "sizeX" : 25,
                   "sizeY" : 4,
-                  "row" : 0,
+                  "row" : 12,
                   "col" : 52
                 },
                 "7b8f0e34-ff7c-eb34-acf5-735b39cbd032" : {
                   "sizeX" : 66,
                   "sizeY" : 8,
-                  "row" : 20,
+                  "row" : 32,
                   "col" : 0
                 },
                 "691b23a0-4ea2-eb54-d160-713c1468ddb0" : {
                   "sizeX" : 66,
                   "sizeY" : 8,
-                  "row" : 12,
+                  "row" : 24,
                   "col" : 0
                 },
                 "6c8893b2-95a6-8dc9-3402-eff53f5943a3" : {
                   "sizeX" : 66,
                   "sizeY" : 7,
-                  "row" : 5,
+                  "row" : 17,
                   "col" : 0
                 },
                 "1ad626a6-dd88-bf95-9775-13a4b73e055d" : {
                   "sizeX" : 68,
                   "sizeY" : 8,
-                  "row" : 5,
+                  "row" : 17,
                   "col" : 67
                 },
                 "74836aab-025b-0748-e89c-681bfdd1199c" : {
                   "sizeX" : 68,
                   "sizeY" : 8,
-                  "row" : 13,
+                  "row" : 25,
                   "col" : 67
                 },
                 "4ee57088-e7f0-2b1b-ce73-cd867e28fdab" : {
                   "sizeX" : 68,
                   "sizeY" : 7,
-                  "row" : 21,
+                  "row" : 33,
                   "col" : 67
                 },
                 "233dee21-d314-d575-f962-7cad3c75a36a" : {
                   "sizeX" : 63,
                   "sizeY" : 23,
-                  "row" : 5,
+                  "row" : 17,
                   "col" : 136
                 },
                 "0c7ea19d-e281-fbec-ae67-6ce0f3ffbe46" : {
                   "sizeX" : 66,
                   "sizeY" : 30,
-                  "row" : 32,
+                  "row" : 44,
                   "col" : 0
                 },
                 "3b6f4544-08f2-f52e-b0d3-16459956a9fc" : {
                   "sizeX" : 63,
                   "sizeY" : 67,
-                  "row" : 29,
+                  "row" : 41,
                   "col" : 136
                 },
                 "5f85890e-6ccf-f2df-52f7-35d4d1bb192f" : {
                   "sizeX" : 95,
                   "sizeY" : 4,
-                  "row" : 0,
+                  "row" : 12,
                   "col" : 104
                 },
                 "7d86a084-f70b-7eed-0bd0-e3f5eef25808" : {
                   "sizeX" : 68,
                   "sizeY" : 33,
                   "mobileHeight" : null,
-                  "row" : 63,
+                  "row" : 75,
                   "col" : 67
                 },
                 "ba57bbab-2c8c-b3a5-0c2d-6b9b9418bf2c" : {
                   "sizeX" : 66,
                   "sizeY" : 3,
-                  "row" : 29,
+                  "row" : 41,
                   "col" : 0
                 },
                 "8c8c6ca0-481f-38df-f8d4-558834b74e08" : {
                   "sizeX" : 68,
                   "sizeY" : 33,
                   "mobileHeight" : null,
-                  "row" : 29,
+                  "row" : 41,
                   "col" : 67
                 },
                 "83c7a165-1806-ded8-bb6e-337ae999183d" : {
                   "sizeX" : 25,
                   "sizeY" : 4,
-                  "row" : 0,
+                  "row" : 12,
                   "col" : 78
                 },
                 "4d1697d7-a1d8-b01b-cbe4-08f6c7b41104" : {
                   "sizeX" : 65,
                   "sizeY" : 30,
-                  "row" : 64,
+                  "row" : 75,
+                  "col" : 0
+                },
+                "81619c67-aed4-6b16-ed88-a4791c5cf1d9" : {
+                  "sizeX" : 199,
+                  "sizeY" : 7,
+                  "row" : 4,
                   "col" : 0
                 }
               },
@@ -37577,7 +37638,6 @@
     },
     "ownerId" : null
   },
-  "relations" : [ ],
   "attributes" : {
     "SERVER_SCOPE" : [ ]
   }
