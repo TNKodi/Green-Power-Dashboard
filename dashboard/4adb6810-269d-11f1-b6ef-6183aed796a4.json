@@ -4561,7 +4561,7 @@
               }
             } ],
             "showTitle" : false,
-            "backgroundColor" : "#fff",
+            "backgroundColor" : "#FFFFFF00",
             "color" : "rgba(0, 0, 0, 0.87)",
             "padding" : "0px",
             "settings" : {
@@ -9018,7 +9018,7 @@
               "name" : "",
               "entityAliasId" : "390e130d-af9e-fa03-c4d3-85ba80896b61",
               "dataKeys" : [ {
-                "name" : "system_capacity",
+                "name" : "Capacity",
                 "type" : "attribute",
                 "label" : "system_capacity",
                 "color" : "#2196f3",
@@ -9576,11 +9576,17 @@
                 "color" : "#2196f3",
                 "settings" : { }
               }, {
-                "name" : "system_capacity",
+                "name" : "Capacity",
                 "type" : "attribute",
                 "label" : "system_capacity",
                 "color" : "#4caf50",
-                "settings" : { }
+                "settings" : { },
+                "aggregationType" : null,
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
               } ],
               "alarmFilterConfig" : {
                 "statusList" : [ "ACTIVE" ]
@@ -29748,8 +29754,8 @@
               "history" : {
                 "historyType" : 1,
                 "fixedTimewindow" : {
-                  "startTimeMs" : 1773946800000,
-                  "endTimeMs" : 1774551600000
+                  "startTimeMs" : 1774033200000,
+                  "endTimeMs" : 1774638000000
                 },
                 "interval" : 86400000
               },
@@ -30322,8 +30328,8 @@
               "history" : {
                 "historyType" : 1,
                 "fixedTimewindow" : {
-                  "startTimeMs" : 1773946800000,
-                  "endTimeMs" : 1774551600000
+                  "startTimeMs" : 1774033200000,
+                  "endTimeMs" : 1774638000000
                 },
                 "interval" : 86400000
               },
@@ -33148,192 +33154,6 @@
           "col" : 0,
           "id" : "1f610441-0107-75fe-1bff-3ade8054d9b2"
         },
-        "bddc044e-8c54-0902-4ee8-802ad69ce746" : {
-          "typeFullFqn" : "system.doughnut",
-          "type" : "latest",
-          "sizeX" : 4,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "390e130d-af9e-fa03-c4d3-85ba80896b61",
-              "dataKeys" : [ {
-                "name" : "grid_availability_percent",
-                "type" : "timeseries",
-                "label" : "Active Time",
-                "color" : "#4CAF50",
-                "settings" : { },
-                "aggregationType" : "AVG",
-                "units" : "%",
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : null,
-                "postFuncBody" : null,
-                "comparisonEnabled" : false,
-                "timeForComparison" : "previousInterval",
-                "comparisonResultType" : "DELTA_ABSOLUTE"
-              }, {
-                "name" : "grid_availability_percent",
-                "type" : "timeseries",
-                "label" : "Inactive Time",
-                "color" : "#F44336",
-                "settings" : { },
-                "aggregationType" : "AVG",
-                "units" : "%",
-                "decimals" : null,
-                "funcBody" : null,
-                "usePostProcessing" : true,
-                "postFuncBody" : "return (100-value);",
-                "comparisonEnabled" : null
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "showTitle" : true,
-            "backgroundColor" : "rgba(0, 0, 0, 0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "sortSeries" : false,
-              "animation" : {
-                "animation" : true,
-                "animationThreshold" : 2000,
-                "animationDuration" : 1000,
-                "animationEasing" : "cubicOut",
-                "animationDelay" : 0,
-                "animationDurationUpdate" : 500,
-                "animationEasingUpdate" : "cubicOut",
-                "animationDelayUpdate" : 0
-              },
-              "showLegend" : true,
-              "legendPosition" : "right",
-              "legendLabelFont" : {
-                "family" : "Roboto",
-                "size" : 12,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "400",
-                "lineHeight" : "16px"
-              },
-              "legendLabelColor" : "rgba(0, 0, 0, 0.38)",
-              "legendValueFont" : {
-                "family" : "Roboto",
-                "size" : 14,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "500",
-                "lineHeight" : "20px"
-              },
-              "legendValueColor" : "rgba(0, 0, 0, 0.87)",
-              "legendShowTotal" : false,
-              "showTooltip" : true,
-              "tooltipValueType" : "percentage",
-              "tooltipValueDecimals" : 0,
-              "tooltipValueFont" : {
-                "family" : "Roboto",
-                "size" : 13,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "500",
-                "lineHeight" : "16px"
-              },
-              "tooltipValueColor" : "rgba(0, 0, 0, 0.76)",
-              "tooltipBackgroundColor" : "rgba(255, 255, 255, 0.76)",
-              "tooltipBackgroundBlur" : 4,
-              "background" : {
-                "type" : "color",
-                "color" : "#fff",
-                "overlay" : {
-                  "enabled" : false,
-                  "color" : "rgba(255,255,255,0.72)",
-                  "blur" : 3
-                }
-              },
-              "padding" : "12px",
-              "layout" : "default",
-              "autoScale" : true,
-              "clockwise" : false,
-              "totalValueFont" : {
-                "family" : "Roboto",
-                "size" : 24,
-                "sizeUnit" : "px",
-                "style" : "normal",
-                "weight" : "500",
-                "lineHeight" : "1"
-              },
-              "totalValueColor" : {
-                "type" : "constant",
-                "color" : "rgba(0, 0, 0, 0.87)",
-                "colorFunction" : "var temperature = value;\nif (typeof temperature !== undefined) {\n  var percent = (temperature + 60)/120 * 100;\n  return tinycolor.mix('blue', 'red', percent).toHexString();\n}\nreturn 'blue';"
-              }
-            },
-            "title" : "Availability in time",
-            "dropShadow" : true,
-            "enableFullscreen" : false,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "units" : "%",
-            "decimals" : 0,
-            "showLegend" : false,
-            "widgetStyle" : { },
-            "actions" : {
-              "headerButton" : [ ]
-            },
-            "configMode" : "advanced",
-            "margin" : "0px",
-            "borderRadius" : "0px",
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : "",
-            "showTitleIcon" : false,
-            "titleTooltip" : "",
-            "titleFont" : {
-              "size" : 16,
-              "sizeUnit" : "px",
-              "family" : "Roboto",
-              "weight" : "500",
-              "style" : "normal",
-              "lineHeight" : "24px"
-            },
-            "titleIcon" : "donut_large",
-            "iconColor" : "rgba(0, 0, 0, 0.87)",
-            "iconSize" : "24px",
-            "titleColor" : "rgba(0, 0, 0, 0.87)",
-            "enableDataExport" : false,
-            "timewindowStyle" : {
-              "showIcon" : false,
-              "iconSize" : "24px",
-              "icon" : null,
-              "iconPosition" : "left",
-              "font" : {
-                "size" : 12,
-                "sizeUnit" : "px",
-                "family" : "Roboto",
-                "weight" : "400",
-                "style" : "normal",
-                "lineHeight" : "16px"
-              },
-              "color" : "rgba(0, 0, 0, 0.38)",
-              "displayTypePrefix" : true
-            },
-            "useDashboardTimewindow" : false,
-            "displayTimewindow" : true,
-            "timewindow" : {
-              "selectedTab" : 1,
-              "history" : {
-                "historyType" : 0,
-                "timewindowMs" : 86400000
-              }
-            }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "bddc044e-8c54-0902-4ee8-802ad69ce746"
-        },
         "30e1e1bc-4623-9d1d-d1c0-23e82e9f2416" : {
           "typeFullFqn" : "tenant.tariff_handler",
           "type" : "latest",
@@ -34874,7 +34694,128 @@
           "col" : 0,
           "id" : "58c8335f-d759-d597-abf4-fde2ca5461a0"
         },
-        "06de0e7d-30e4-cbad-a2f7-822540af4765" : {
+        "7d965afc-6afd-8e67-1f44-76174ddb16f6" : {
+          "typeFullFqn" : "tenant.test_v2_hierarchy",
+          "type" : "latest",
+          "sizeX" : 7.5,
+          "sizeY" : 3.5,
+          "config" : {
+            "showTitle" : false,
+            "backgroundColor" : "rgba(0, 0, 0, 0.38)",
+            "color" : "rgba(255, 255, 255, 0.87)",
+            "padding" : "4px",
+            "settings" : {
+              "nodeRelationQueryFunction" : " var entity = nodeCtx.entity;\r\n   var query = {\r\n       parameters: {\r\n           rootId: entity.id.id,\r\n           rootType: entity.id.entityType,\r\n           direction: \"FROM\",\r\n           maxLevel: 1\r\n       },\r\n       filters: [{\r\n           relationType: \"Contains\",\r\n           entityTypes: []\r\n       }]\r\n   };\r\n   return query;",
+              "nodeHasChildrenFunction" : "/**\n\n// Function should return boolean value indicating whether current node has children (whether it can be expanded).\n\n// The following example code will restrict entities hierarchy expansion up to third level.\n\nreturn nodeCtx.level <= 2;\n\n// The next example code will restrict entities expansion according to the value of example 'nodeHasChildren' attribute.\n\nvar data = nodeCtx.data;\nif (data.hasOwnProperty('nodeHasChildren') && data['nodeHasChildren'] !== null) {\n    return data['nodeHasChildren'] === 'true';\n} else {\n    return true;\n}\n  \n**/\n ",
+              "nodeOpenedFunction" : "var entity = nodeCtx.entity;\r\n\r\n// Use the ID of your default device (find this from the ThingsBoard entity list)\r\nvar defaultDeviceId = '783e5900-45af-11ef-b4ce-d5aee9e495ad';\r\n\r\n// Check if the current entity matches the default device and open it\r\nif (entity.id.id === defaultDeviceId) {\r\n    return true; // Open this device by default\r\n} else {\r\n    return nodeCtx.level <= 3; // Default behavior for other nodes (first level nodes open)\r\n}\r\n",
+              "nodeDisabledFunction" : "var data = nodeCtx.data;\r\nvar excludedDevices = ['VPE Plant1', 'VPE Plant2', 'VPE Plant1_Block1','VPE Plant1_Block2', 'VPE Plant2_Block1','VPE Plant2_Block2', 'VPE P1_EnergyMeter', 'VPE P2_EnergyMeter', 'VPE P1_WSTN','VPE P2_WSTN'];\r\nif (excludedDevices.includes(nodeCtx.entity.name)) {\r\n    return true; // Disable these devices from being selectable\r\n} else {\r\n    return false;\r\n}\r\n",
+              "nodeIconFunction" : "   var entity = nodeCtx.entity;\r\n   var type = entity.id.entityType;\r\n   if (type === 'DEVICE') return { materialIcon: 'fiber_manual_record' };\r\n   if (type === 'ASSET')  return { materialIcon: 'fiber_manual_record' };\r\n   return { materialIcon: 'fiber_manual_record' };",
+              "nodeTextFunction" : "/**\n\n// Function should return text (can be HTML code) for the current node.\n\n// The following example code will generate node text consisting of entity name and temperature if temperature value is present in entity attributes/timeseries.\n\nvar data =  nodeCtx.data;\nvar entity = nodeCtx.entity;\nvar text = entity.name;\nif (data.hasOwnProperty('temperature') && data['temperature'] !== null) {\n    text += \" <b>\"+ data['temperature'] +\" °C</b>\";\n}\nreturn text;\n\n**/",
+              "nodesSortFunction" : "/**\n\n// This function is used to sort nodes of the same level. Function should compare two nodes and return \n// integer value: \n//     - less than 0 - sort nodeCtx1 to an index lower than nodeCtx2\n//     - 0 - leave nodeCtx1 and nodeCtx2 unchanged with respect to each other\n//     - greater than 0 - sort nodeCtx2 to an index lower than nodeCtx1\n\n// The following example code will sort entities first by entity type in alphabetical order then\n// by entity name in alphabetical order.\n\nvar result = nodeCtx1.entity.id.entityType.localeCompare(nodeCtx2.entity.id.entityType);\nif (result === 0) {\n    result = nodeCtx1.entity.name.localeCompare(nodeCtx2.entity.name);\n}\nreturn result;\n  \n**/"
+            },
+            "title" : "test v2 - Hierarchy",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400,
+              "padding" : "5px 10px 5px 10px"
+            },
+            "showLegend" : false,
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "c89439ec-7b07-7cf9-30da-9a8f67729b99",
+              "dataKeys" : [ {
+                "name" : "name",
+                "type" : "entityField",
+                "label" : "Name",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "label",
+                "type" : "entityField",
+                "label" : "Label",
+                "color" : "#4caf50",
+                "settings" : { }
+              }, {
+                "name" : "type",
+                "type" : "entityField",
+                "label" : "Type",
+                "color" : "#f44336",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "widgetStyle" : { },
+            "actions" : {
+              "nodeSelected" : [ {
+                "name" : "Update Dashboard",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "updateDashboardState",
+                "targetDashboardStateId" : "",
+                "setEntityId" : true,
+                "stateEntityParamName" : "SelectedAsset",
+                "openRightLayout" : false,
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "72d57343-c3e9-bbd9-0cc7-88fff9c2655f"
+              } ]
+            },
+            "enableDataExport" : false,
+            "borderRadius" : "10px",
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "7d965afc-6afd-8e67-1f44-76174ddb16f6"
+        },
+        "fc79b733-f1bc-0704-71de-ba31f480c6aa" : {
+          "typeFullFqn" : "tenant.nav_bar_",
+          "type" : "static",
+          "sizeX" : 7.5,
+          "sizeY" : 3,
+          "config" : {
+            "datasources" : [ {
+              "type" : "static",
+              "name" : "function",
+              "dataKeys" : [ {
+                "name" : "f(x)",
+                "type" : "function",
+                "label" : "Random",
+                "color" : "#2196f3",
+                "settings" : { },
+                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
+              } ]
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "rgba(255, 255, 255, 0)",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "cardHtml" : "<div class=\"page-header\">\n\n    <!-- ═══ TOP ROW: Title + Clock ═══ -->\n    <div class=\"header-top\">\n        <div class=\"title-section\">\n            SOLAR PV PLANT MONITORING - FINANCIAL PERFORMANCE OVERVIEW\n        </div>\n        <div class=\"time-section\">\n            <span id=\"date-display\">Loading...</span>\n            <span class=\"separator\">|</span>\n            <span id=\"time-display\">--:--:--</span>\n            <span class=\"timezone\">(UTC+05:30)</span>\n        </div>\n    </div>\n\n    <!-- ═══ DIVIDER ═══ -->\n    <div class=\"header-divider\"></div>\n\n    <!-- ═══ BOTTOM ROW: Navigation Tabs ═══ -->\n    <div class=\"header-nav\">\n        <div class=\"nav-item\" data-state=\"energy_prod\">Energy &amp; Yield</div>\n        <div class=\"nav-item\" data-state=\"forecasts\">Forecasts &amp; Risk</div>\n        <div class=\"nav-item\" data-state=\"financial\">Financials</div>\n        <div class=\"nav-item\" data-state=\"esg\">ESG &amp; Carbon</div>\n        <div class=\"nav-item\" data-state=\"grid_loss\">Grid &amp; Losses</div>\n        <div class=\"nav-item\" data-state=\"portfolio\">Portfolio</div>\n    </div>\n\n</div>\n",
+              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
+            },
+            "title" : "Nav bar ",
+            "dropShadow" : true,
+            "enableFullscreen" : false,
+            "enableDataExport" : true,
+            "widgetStyle" : { },
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : ""
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "fc79b733-f1bc-0704-71de-ba31f480c6aa"
+        },
+        "807eec78-cd24-216c-447b-6099ee5de618" : {
           "typeFullFqn" : "system.action_button",
           "type" : "latest",
           "sizeX" : 3,
@@ -34936,9 +34877,369 @@
               "appearance" : {
                 "type" : "underlined",
                 "showLabel" : true,
-                "label" : "Heat Map",
+                "label" : "Overview",
                 "showIcon" : true,
-                "icon" : "mdi:map-search-outline",
+                "icon" : "home",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : {
+                    "overrideMainColor" : true,
+                    "mainColor" : "#FFFFFF",
+                    "overrideBackgroundColor" : true,
+                    "backgroundColor" : "var(--tb-primary-500)",
+                    "overrideDropShadow" : true,
+                    "dropShadow" : true
+                  },
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : {
+                    "overrideMainColor" : true,
+                    "mainColor" : "var(--tb-primary-500)",
+                    "overrideBackgroundColor" : true,
+                    "backgroundColor" : "#FFFFFF"
+                  },
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "advanced",
+            "actions" : {
+              "click" : [ {
+                "name" : "hhdh",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "var userIdObj = widgetContext.currentUser.userId;\r\n\r\n// Safe check\r\nif (!userIdObj) {\r\n    widgetContext.showErrorToast(\"User ID not found\");\r\n    return;\r\n}\r\n\r\n// Extract UUID properly\r\nvar userUUID = userIdObj.id ? userIdObj.id : userIdObj;\r\n\r\nvar attributeBody = {\r\n    dashboardMode: \"1\"\r\n};\r\n\r\nwidgetContext.http.post(\r\n    '/api/plugins/telemetry/USER/' + userUUID + '/SERVER_SCOPE',\r\n    attributeBody\r\n).subscribe(\r\n    function () {\r\n        \r\n    },\r\n    function (err) {\r\n        \r\n    }\r\n);\r\n",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "44b658c9-23e3-182d-5634-08f2392aab12"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "807eec78-cd24-216c-447b-6099ee5de618"
+        },
+        "567d94e6-efa9-fba9-ee4c-4aff84102d62" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "390e130d-af9e-fa03-c4d3-85ba80896b61",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "underlined",
+                "showLabel" : true,
+                "label" : "Maintenance",
+                "showIcon" : true,
+                "icon" : "engineering",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "advanced",
+            "actions" : {
+              "click" : [ {
+                "name" : "asset_fin",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "var userIdObj = widgetContext.currentUser.userId;\r\n\r\n// Safe check\r\nif (!userIdObj) {\r\n    widgetContext.showErrorToast(\"User ID not found\");\r\n    return;\r\n}\r\n\r\n// Extract UUID properly\r\nvar userUUID = userIdObj.id ? userIdObj.id : userIdObj;\r\n\r\nvar attributeBody = {\r\n    dashboardMode: \"2\"\r\n};\r\n\r\nwidgetContext.http.post(\r\n    '/api/plugins/telemetry/USER/' + userUUID + '/SERVER_SCOPE',\r\n    attributeBody\r\n).subscribe(\r\n    function () {\r\n        \r\n    },\r\n    function (err) {\r\n        \r\n    }\r\n);\r\n",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "9c5dff72-90de-d449-76d1-172f09e7d6cf"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "567d94e6-efa9-fba9-ee4c-4aff84102d62"
+        },
+        "7f03cdee-199d-d1ec-b5ce-450763301734" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "390e130d-af9e-fa03-c4d3-85ba80896b61",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "underlined",
+                "showLabel" : true,
+                "label" : "Finance",
+                "showIcon" : true,
+                "icon" : "monetization_on",
+                "iconSize" : 24,
+                "iconSizeUnit" : "px",
+                "mainColor" : "var(--tb-primary-500)",
+                "backgroundColor" : "#FFFFFF",
+                "autoScale" : true,
+                "customStyle" : {
+                  "enabled" : null,
+                  "hovered" : null,
+                  "pressed" : null,
+                  "activated" : null,
+                  "disabled" : null
+                }
+              }
+            },
+            "title" : "Action button",
+            "showTitleIcon" : false,
+            "iconColor" : "rgba(0, 0, 0, 0.87)",
+            "iconSize" : "24px",
+            "titleTooltip" : "",
+            "dropShadow" : false,
+            "enableFullscreen" : false,
+            "enableDataExport" : false,
+            "widgetStyle" : { },
+            "titleStyle" : {
+              "fontSize" : "16px",
+              "fontWeight" : 400
+            },
+            "showLegend" : false,
+            "widgetCss" : "",
+            "pageSize" : 1024,
+            "noDataDisplayMessage" : "",
+            "borderRadius" : "4px",
+            "configMode" : "advanced",
+            "actions" : {
+              "click" : [ {
+                "name" : "gg",
+                "icon" : "more_horiz",
+                "useShowWidgetActionFunction" : null,
+                "showWidgetActionFunction" : "return true;",
+                "type" : "custom",
+                "customFunction" : "var userIdObj = widgetContext.currentUser.userId;\r\n\r\n// Safe check\r\nif (!userIdObj) {\r\n    widgetContext.showErrorToast(\"User ID not found\");\r\n    return;\r\n}\r\n\r\n// Extract UUID properly\r\nvar userUUID = userIdObj.id ? userIdObj.id : userIdObj;\r\n\r\nvar attributeBody = {\r\n    dashboardMode: \"3\"\r\n};\r\n\r\nwidgetContext.http.post(\r\n    '/api/plugins/telemetry/USER/' + userUUID + '/SERVER_SCOPE',\r\n    attributeBody\r\n).subscribe(\r\n    function () {\r\n        \r\n    },\r\n    function (err) {\r\n        \r\n    }\r\n);\r\n",
+                "openInSeparateDialog" : false,
+                "openInPopover" : false,
+                "id" : "add99712-b00b-8e8f-5df6-4cc4e06fcf8a"
+              } ]
+            }
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "7f03cdee-199d-d1ec-b5ce-450763301734"
+        },
+        "c3f6ecb0-89ea-606b-0396-bb047893628a" : {
+          "typeFullFqn" : "system.action_button",
+          "type" : "latest",
+          "sizeX" : 3,
+          "sizeY" : 1,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "entityAliasId" : "390e130d-af9e-fa03-c4d3-85ba80896b61",
+              "dataKeys" : [ ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : false,
+            "backgroundColor" : "#FFFFFF01",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "0px",
+            "settings" : {
+              "activatedState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "disabledState" : {
+                "action" : "DO_NOTHING",
+                "defaultValue" : false,
+                "getAttribute" : {
+                  "key" : "state",
+                  "scope" : null
+                },
+                "getTimeSeries" : {
+                  "key" : "state"
+                },
+                "getAlarmStatus" : {
+                  "severityList" : null,
+                  "typeList" : null
+                },
+                "dataToValue" : {
+                  "type" : "NONE",
+                  "compareToValue" : true,
+                  "dataToValueFunction" : "/* Should return boolean value */\nreturn data;"
+                }
+              },
+              "appearance" : {
+                "type" : "underlined",
+                "showLabel" : true,
+                "label" : "Controlling",
+                "showIcon" : true,
+                "icon" : "build",
                 "iconSize" : 24,
                 "iconSizeUnit" : "px",
                 "mainColor" : "var(--tb-primary-500)",
@@ -34988,22 +35289,22 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "06de0e7d-30e4-cbad-a2f7-822540af4765"
+          "id" : "c3f6ecb0-89ea-606b-0396-bb047893628a"
         },
-        "4d1697d7-a1d8-b01b-cbe4-08f6c7b41104" : {
-          "typeFullFqn" : "tenant.heat_map2",
+        "63451df2-7977-d179-d3cd-b5da4953064c" : {
+          "typeFullFqn" : "tenant.heat_map_2_0",
           "type" : "latest",
-          "sizeX" : 7.5,
-          "sizeY" : 3,
+          "sizeX" : 8,
+          "sizeY" : 4.5,
           "config" : {
             "datasources" : [ {
               "type" : "entity",
               "name" : "",
               "entityAliasId" : "c89439ec-7b07-7cf9-30da-9a8f67729b99",
               "dataKeys" : [ {
-                "name" : "plant_size_mw",
+                "name" : "Capacity",
                 "type" : "attribute",
-                "label" : "plant_size_mw",
+                "label" : "Capacity",
                 "color" : "#2196f3",
                 "settings" : { }
               }, {
@@ -35020,136 +35321,12 @@
             "showTitle" : false,
             "backgroundColor" : "#fff",
             "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "cardCss" : ".card {\n   width: 100%;\n   height: 100%;\n   border: 2px solid #ccc;\n   box-sizing: border-box;\n}\n\n.card .content {\n   padding: 20px;\n   display: flex;\n   flex-direction: row;\n   align-items: center;\n   justify-content: space-around;\n   height: 100%;\n   box-sizing: border-box;\n}\n\n.card .content .column {\n   display: flex;\n   flex-direction: column;    \n   justify-content: space-around;\n   height: 100%;\n}\n\n.card h1 {\n    text-transform: uppercase;\n    color: #999;\n    font-size: 20px;\n    font-weight: bold;\n    margin: 0;\n    padding-bottom: 10px;\n    line-height: 32px;\n}\n\n.card .value {\n    font-size: 38px;\n    font-weight: 200;\n}\n\n.card .description {\n    font-size: 20px;\n    color: #999;\n}\n",
-              "cardHtml" : "<div class='card'>\n    <div class='content'>\n        <div class='column'>\n            <h1>Value title</h1>\n            <div class='value'>\n                ${My value:2} units.\n            </div>    \n            <div class='description'>\n                Value description text\n            </div>\n        </div>\n        <img height=\"80px\" src=\"data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIGhlaWdodD0iMzIwIiB3aWR0aD0iMzIwIj48ZyBzdHJva2Utd2lkdGg9IjI4Ij48ZyBmaWxsPSIjMzA1NjgwIiBjb2xvcj0iIzAwMCIgd2hpdGUtc3BhY2U9Im5vcm1hbCI+PHBhdGggc3R5bGU9InRleHQtZGVjb3JhdGlvbi1jb2xvcjojMDAwO2lzb2xhdGlvbjphdXRvO21peC1ibGVuZC1tb2RlOm5vcm1hbDtibG9jay1wcm9ncmVzc2lvbjp0Yjt0ZXh0LWRlY29yYXRpb24tbGluZTpub25lO3RleHQtZGVjb3JhdGlvbi1zdHlsZTpzb2xpZDt0ZXh0LWluZGVudDowO3RleHQtdHJhbnNmb3JtOm5vbmUiIGQ9Ik0xNTEuMTMgMGMtMjguMzYzIDAtNTQuOTE1IDcuOTE1LTc3LjYxMyAyMS41MzdhMzYuNTc4IDM2LjU3OCAwIDAgMC0yMy4wNjctOC4xOTQgOC43NjYgOC43NjYgMCAwIDAtLjAwNCAwYy0yMC4xNTQuMDAxLTM2LjY3OSAxNi41MjgtMzYuNjc4IDM2LjY4MmE4Ljc2NiA4Ljc2NiAwIDAgMCAwIC4wMSAzNi42OSAzNi42OSAwIDAgMCA4LjEwNCAyMi45MjhjLTEzLjgzIDIyLjgzLTIxLjg3IDQ5LjU4LTIxLjg3IDc4LjE3YTguNzY2IDguNzY2IDAgMSAwIDE3LjUzIDBjMC0yNC43MDIgNi43Mi00Ny43NDggMTguMzc5LTY3LjU3NCA0LjU2NiAxLjk4NSA5LjQ3MiAzLjE1IDE0LjUxOSAzLjE1N2E4Ljc2NiA4Ljc2NiAwIDAgMCAuMDEyIDBjMjAuMTU1IDAgMzYuNjgzLTE2LjUyNyAzNi42ODItMzYuNjgyYTguNzY2IDguNzY2IDAgMCAwIDAtLjAwNGMtLjAwMS01LTEuMTM4LTkuODYzLTMuMDgzLTE0LjM5NyAxOS43MTctMTEuNDg0IDQyLjU4NS0xOC4wOTUgNjcuMDg1LTE4LjA5NWE4Ljc2NiA4Ljc2NiAwIDEgMCAwLTE3LjUzek01MC40NCAzMC44OGM1LjkxMy4wMDIgMTEuMTkxIDIuNTEyIDE0LjgzNiA3LjA3N2E4Ljc2NiA4Ljc2NiAwIDAgMCAuMTgzLjIxNCAxOS4xMzcgMTkuMTM3IDAgMCAxIDQuMTM0IDExLjg2M2MtLjAwMiAxMC42NzctOC40NjggMTkuMTQ0LTE5LjE0NCAxOS4xNDhhMTkuMTQ1IDE5LjE0NSAwIDAgMS0xMi00LjI1NCA4Ljc2NiA4Ljc2NiAwIDAgMC0uMDEzLS4wMSAxOS4xMzYgMTkuMTM2IDAgMCAxLTcuMTQ0LTE0Ljg5MmMuMDAzLTEwLjY3NyA4LjQ3LTE5LjE0NCAxOS4xNDgtMTkuMTQ2eiIvPjxwYXRoIHN0eWxlPSJ0ZXh0LWRlY29yYXRpb24tY29sb3I6IzAwMDtpc29sYXRpb246YXV0bzttaXgtYmxlbmQtbW9kZTpub3JtYWw7YmxvY2stcHJvZ3Jlc3Npb246dGI7dGV4dC1kZWNvcmF0aW9uLWxpbmU6bm9uZTt0ZXh0LWRlY29yYXRpb24tc3R5bGU6c29saWQ7dGV4dC1pbmRlbnQ6MDt0ZXh0LXRyYW5zZm9ybTpub25lIiBkPSJNNjYuOTkyIDEwMi44M2E4LjE4NyA4LjE4NyAwIDAgMC0yLjI1OCA2LjA3MSA4LjYwNCA4LjYwNCAwIDAgMCAyLjMzOCA1LjUxOGM2LjgwNSA2Ljg1NiAyMC4yMjMgMjAuMjIzIDIwLjIyMyAyMC4yMjNsMTEuODQ0LTExLjgzcy0xMi45NzMtMTIuOTYxLTIwLjE3Ni0yMC4xNzFjLTEuNjA0LTEuNjMyLTMuNzUtMi4zMTQtNi4wMTItMi4zMjRhOC4xNSA4LjE1IDAgMCAwLTUuOTYgMi41MTJ6bTMyLjE0NyAxOS45ODNMNjIuNSAxNTkuNDUyYy0zLjk3NSAzLjk3Ni0zLjk3NSAxMC40MjEgMCAxNC4zOTdsMTguMTU2IDE4LjE1NiAzMS43NTMgMzEuNzUzIDMwLjQ3OCAzMC40NzhjMy45NzYgMy45NzYgMTAuNDIyIDMuOTc2IDE0LjM5OCAwbDI0Ljc5MS0yNC43OTEgMzcuOTE0LTM3LjkxNCAzNi42MzktMzYuNjM5YzMuOTc1LTMuOTc2IDMuOTc1LTEwLjQyMiAwLTE0LjM5OGwtMTguNjMtMTguNjMtMzEuNzUtMzEuNzYtMzAuMDEtMzBjLTMuOTc3LTMuOTc1LTEwLjQyMi0zLjk3NS0xNC4zOTggMGwtMjQuNzkgMjQuNzktMzcuOTEgMzcuOTF6bTM3LjkxMS0zNy45MXMtMTIuOTczLTEyLjk2MS0yMC4xNzYtMjAuMTcxYy0xLjYwNC0xLjYzMi0zLjc1LTIuMzE0LTYuMDEyLTIuMzI0LTQuNzE3LS4wMjMtOC40MzQgMy44NjEtOC4yMTcgOC41ODNhOC42MDQgOC42MDQgMCAwIDAgMi4zMzcgNS41MThjNi44MDUgNi44NTYgMjAuMjIzIDIwLjIyMyAyMC4yMjMgMjAuMjIzbDExLjg0NC0xMS44M3ptNjkuMTkzIDUuMjEzczEyLjk2MS0xMi45NzMgMjAuMTcxLTIwLjE3NmMxLjYzMy0xLjYwNCAyLjMxNC0zLjc1IDIuMzI0LTYuMDEyLjAyMy00LjcxNi0zLjg2MS04LjQzNC04LjU4My04LjIxN2E4LjYwNCA4LjYwNCAwIDAgMC01LjUxOCAyLjMzOGMtNi44NTYgNi44MDUtMjAuMjIzIDIwLjIyMy0yMC4yMjMgMjAuMjIzbDExLjgzIDExLjg0NHptMzEuNzUzIDMxLjc1M3MxMi45NjEtMTIuOTczIDIwLjE3MS0yMC4xNzZjMS42MzMtMS42MDQgMi4zMTQtMy43NSAyLjMyNC02LjAxMi4wMjMtNC43MTYtMy44NjEtOC40MzQtOC41ODMtOC4yMTdhOC42MDQgOC42MDQgMCAwIDAtNS41MTggMi4zMzhjLTYuODU2IDYuODA1LTIwLjIyMyAyMC4yMjMtMjAuMjIzIDIwLjIyM2wxMS44MyAxMS44NDR6bS0xOC4wMDkgNjkuNjY3czEyLjk3MyAxMi45NjEgMjAuMTc4IDIwLjE3YzEuNjA0IDEuNjMyIDMuNzUgMi4zMTMgNi4wMTIgMi4zMjQgNC43MTcuMDIyIDguNDM0LTMuODYyIDguMjE3LTguNTg0bC0uMDAyLjAwMmE4LjYwNiA4LjYwNiAwIDAgMC0yLjMzOC01LjUxOGMtNi44MDUtNi44NTYtMjAuMjIyLTIwLjIyMi0yMC4yMjItMjAuMjIybC0xMS44NDQgMTEuODN6bS0zNy45MTQgMzcuOTE0czEyLjk3MyAxMi45NjEgMjAuMTc4IDIwLjE3YzEuNjA0IDEuNjMyIDMuNzUgMi4zMTMgNi4wMTIgMi4zMjMgNC43MTcuMDIzIDguNDM0LTMuODYxIDguMjE3LTguNTgzaC0uMDAyYTguNjAzIDguNjAzIDAgMCAwLTIuMzM3LTUuNTE4Yy02LjgwNS02Ljg1Ni0yMC4yMjMtMjAuMjIzLTIwLjIyMy0yMC4yMjNsLTExLjg0NCAxMS44M3ptLTY5LjY2Ny01LjY4N3MtMTIuOTYxIDEyLjk3My0yMC4xNjkgMjAuMTc4Yy0xLjYzMiAxLjYwNC0yLjMxNCAzLjc1LTIuMzI0IDYuMDEyLS4wMjMgNC43MTcgMy44NjEgOC40MzQgOC41ODMgOC4yMTdoLS4wMDJhOC42MDIgOC42MDIgMCAwIDAgNS41MTgtMi4zMzdjNi44NTYtNi44MDUgMjAuMjIzLTIwLjIyMyAyMC4yMjMtMjAuMjIzbC0xMS44Mi0xMS44NHptLTMxLjc0My0zMS43NHMtMTIuOTYxIDEyLjk3My0yMC4xNjkgMjAuMTc4Yy0xLjYzMiAxLjYwNC0yLjMxNCAzLjc1LTIuMzI0IDYuMDEyLS4wMjMgNC43MTcgMy44NjEgOC40MzQgOC41ODMgOC4yMTdoLS4wMDJhOC42MDQgOC42MDQgMCAwIDAgNS41MTgtMi4zMzdjNi44NTYtNi44MDUgMjAuMjIzLTIwLjIyMyAyMC4yMjMtMjAuMjIzbC0xMS44My0xMS44NXpNMTY3LjkgMTAxLjQ3YzEuNjgtMS43MDYgMy45NjctMi42NiA2LjI5Ny0yLjYyNmE3Ljg5IDcuODkgMCAwIDEgNC41NjMgMS41MWwxNi40OTkgMTIuMWMzLjIgMi4yOTcgNC4xNDQgNi42NTkgMi4yMyAxMC4zMTItMS45MTMgMy42NTMtNi4xMjMgNS41MjQtOS45NSA0LjQyM2w2LjEyNCAyMy45NDhjMS4xMTMgNC4zNTEtMS41NjQgOC45NjctNS45ODQgMTAuMzE3bC00NC42NDIgMTMuNjMgOC4yNDYgMzEuODg0YzEuMTczIDQuMzctMS41MDIgOS4wNDQtNS45NTUgMTAuNDA3cy04Ljk3NS0xLjExMS0xMC4wNjgtNS41MDVsLTEwLjI4Mi0zOS43N2MtMS4xMjYtNC4zNTUgMS41NS04Ljk4NCA1Ljk3Ni0xMC4zMzdsNDQuNjYxLTEzLjYzNy00LjEyMi0xNi4xMThjLTIuNzYzIDMuMDY0LTcuMjMzIDMuODA4LTEwLjU4NiAxLjc2MS0zLjM1My0yLjA0Ny00LjYxNC02LjI5LTIuOTg2LTEwLjA0N2w4LjExNy0xOS40NTRhOC44NzIgOC44NzIgMCAwIDEgMS44NjMtMi43OTd6IiBmaWxsLXJ1bGU9ImV2ZW5vZGQiLz48cGF0aCBzdHlsZT0idGV4dC1kZWNvcmF0aW9uLWNvbG9yOiMwMDA7aXNvbGF0aW9uOmF1dG87bWl4LWJsZW5kLW1vZGU6bm9ybWFsO2Jsb2NrLXByb2dyZXNzaW9uOnRiO3RleHQtZGVjb3JhdGlvbi1saW5lOm5vbmU7dGV4dC1kZWNvcmF0aW9uLXN0eWxlOnNvbGlkO3RleHQtaW5kZW50OjA7dGV4dC10cmFuc2Zvcm06bm9uZSIgZD0iTTE2OC44NyAzMjAuMDRjMjguMzYzIDAgNTQuOTE1LTcuOTE1IDc3LjYxNC0yMS41MzhhMzYuNTc4IDM2LjU3OCAwIDAgMCAyMy4wNjcgOC4xOTQgOC43NjYgOC43NjYgMCAwIDAgLjAwNCAwYzIwLjE1NSAwIDM2LjY4LTE2LjUyOCAzNi42NzktMzYuNjgyYTguNzY2IDguNzY2IDAgMCAwIDAtLjAxMSAzNi42ODggMzYuNjg4IDAgMCAwLTguMTAzLTIyLjkyN2MxMy44MjUtMjIuODIgMjEuODY2LTQ5LjU3MiAyMS44NjYtNzguMTYyYTguNzY2IDguNzY2IDAgMSAwLTE3LjUzMSAwYzAgMjQuNzAzLTYuNzIgNDcuNzQ5LTE4LjM3OCA2Ny41NzUtNC41NjctMS45ODUtOS40NzMtMy4xNS0xNC41Mi0zLjE1N2E4Ljc2NiA4Ljc2NiAwIDAgMC0uMDEyIDBjLTIwLjE1NS0uMDAxLTM2LjY4MyAxNi41MjctMzYuNjgyIDM2LjY4Mi4wMDIgNC45OTkgMS4xMzkgOS44NjIgMy4wODMgMTQuMzk3LTE5LjcxNyAxMS40ODQtNDIuNTg2IDE4LjA5NS02Ny4wODYgMTguMDk1YTguNzY2IDguNzY2IDAgMSAwIDAgMTcuNTN6bTEwMC42OS0zMC44NzVjLTUuOTEzIDAtMTEuMTkxLTIuNTEyLTE0LjgzNi03LjA3N2E4Ljc2NiA4Ljc2NiAwIDAgMC0uMTgzLS4yMTQgMTkuMTM2IDE5LjEzNiAwIDAgMS00LjEzNC0xMS44NjNjLjAwMi0xMC42NzcgOC40NjgtMTkuMTQ0IDE5LjE0NC0xOS4xNDhhMTkuMTQ1IDE5LjE0NSAwIDAgMSAxMiA0LjI1NCA4Ljc2NiA4Ljc2NiAwIDAgMCAuMDEzLjAxIDE5LjEzNiAxOS4xMzYgMCAwIDEgNy4xNDQgMTQuODkyYy0uMDAzIDEwLjY3Ny04LjQ3IDE5LjE0NS0xOS4xNDggMTkuMTQ2eiIvPjwvZz48L2c+PC9zdmc+\" />\n    </div>\n</div>"
-            },
-            "title" : "heat map",
-            "dropShadow" : false,
-            "enableFullscreen" : true,
-            "widgetStyle" : { },
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400
-            },
-            "showLegend" : false,
-            "actions" : { }
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "4d1697d7-a1d8-b01b-cbe4-08f6c7b41104"
-        },
-        "40def845-791c-da43-d59e-2b1b3111c2aa" : {
-          "typeFullFqn" : "tenant.hierarchy_darkmode",
-          "type" : "latest",
-          "sizeX" : 7.5,
-          "sizeY" : 3.5,
-          "config" : {
-            "showTitle" : false,
-            "backgroundColor" : "rgba(255, 255, 255, 0)",
-            "color" : "rgba(255, 255, 255, 0.87)",
-            "padding" : "4px",
-            "settings" : {
-              "nodeRelationQueryFunction" : " var entity = nodeCtx.entity;\r\n   var query = {\r\n       parameters: {\r\n           rootId: entity.id.id,\r\n           rootType: entity.id.entityType,\r\n           direction: \"FROM\",\r\n           maxLevel: 1\r\n       },\r\n       filters: [{\r\n           relationType: \"Contains\",\r\n           entityTypes: []\r\n       }]\r\n   };\r\n   return query;",
-              "nodeHasChildrenFunction" : "/**\n\n// Function should return boolean value indicating whether current node has children (whether it can be expanded).\n\n// The following example code will restrict entities hierarchy expansion up to third level.\n\nreturn nodeCtx.level <= 2;\n\n// The next example code will restrict entities expansion according to the value of example 'nodeHasChildren' attribute.\n\nvar data = nodeCtx.data;\nif (data.hasOwnProperty('nodeHasChildren') && data['nodeHasChildren'] !== null) {\n    return data['nodeHasChildren'] === 'true';\n} else {\n    return true;\n}\n  \n**/\n ",
-              "nodeOpenedFunction" : "var entity = nodeCtx.entity;\r\n\r\n// Use the ID of your default device (find this from the ThingsBoard entity list)\r\nvar defaultDeviceId = '783e5900-45af-11ef-b4ce-d5aee9e495ad';\r\n\r\n// Check if the current entity matches the default device and open it\r\nif (entity.id.id === defaultDeviceId) {\r\n    return true; // Open this device by default\r\n} else {\r\n    return nodeCtx.level <= 2; // Default behavior for other nodes (first level nodes open)\r\n}\r\n",
-              "nodeDisabledFunction" : "var data = nodeCtx.data;\r\nvar excludedDevices = ['VPE Plant1', 'VPE Plant2', 'VPE Plant1_Block1','VPE Plant1_Block2', 'VPE Plant2_Block1','VPE Plant2_Block2', 'VPE P1_EnergyMeter', 'VPE P2_EnergyMeter', 'VPE P1_WSTN','VPE P2_WSTN'];\r\nif (excludedDevices.includes(nodeCtx.entity.name)) {\r\n    return true; // Disable these devices from being selectable\r\n} else {\r\n    return false;\r\n}\r\n",
-              "nodeIconFunction" : "   var entity = nodeCtx.entity;\r\n   var type = entity.id.entityType;\r\n   if (type === 'DEVICE') return { materialIcon: 'fiber_manual_record' };\r\n   if (type === 'ASSET')  return { materialIcon: 'fiber_manual_record' };\r\n   return { materialIcon: 'fiber_manual_record' };",
-              "nodeTextFunction" : "// return nodeCtx.entity.name;\n\nvar data = nodeCtx.data;\nvar entity = nodeCtx.entity;\nvar text = entity.label || entity.name;\n\n// Check if the node is disabled\nvar isDisabled = false; // Default to not disabled\n\n// Example logic to determine if node should be disabled\nvar excludedDevices = ['B1_STS', 'B1-Logger_eYpRyMMgoLpPGZG','Asset-KBG Plant', 'B2_STS', 'B2-Logger_AlfspQjyhvkmoVO', 'WSTN1', 'EnergyMeter'];\nif (excludedDevices.includes(entity.name)) {\n    isDisabled = true; // Mark the node as disabled\n}\n\n// Apply custom color based on whether the node is disabled\nif (isDisabled) {\n    text = '<span style=\"color: white;\">' + text + '</span>'; // Set disabled node to gray\n} else {\n    text = '<span style=\"color: white;\">' + text + '</span>'; // Set enabled nodes to black (or any other color)\n}\n\nreturn text;\n",
-              "nodesSortFunction" : "/**\n\n// This function is used to sort nodes of the same level. Function should compare two nodes and return \n// integer value: \n//     - less than 0 - sort nodeCtx1 to an index lower than nodeCtx2\n//     - 0 - leave nodeCtx1 and nodeCtx2 unchanged with respect to each other\n//     - greater than 0 - sort nodeCtx2 to an index lower than nodeCtx1\n\n// The following example code will sort entities first by entity type in alphabetical order then\n// by entity name in alphabetical order.\n\nvar result = nodeCtx1.entity.id.entityType.localeCompare(nodeCtx2.entity.id.entityType);\nif (result === 0) {\n    result = nodeCtx1.entity.name.localeCompare(nodeCtx2.entity.name);\n}\nreturn result;\n  \n**/"
-            },
-            "title" : "hierarchy darkmode",
-            "dropShadow" : false,
-            "enableFullscreen" : false,
-            "titleStyle" : {
-              "fontSize" : "16px",
-              "fontWeight" : 400,
-              "padding" : "5px 10px 5px 10px"
-            },
-            "showLegend" : false,
-            "datasources" : [ {
-              "type" : "entity",
-              "name" : "",
-              "entityAliasId" : "c89439ec-7b07-7cf9-30da-9a8f67729b99",
-              "dataKeys" : [ {
-                "name" : "name",
-                "type" : "entityField",
-                "label" : "Name",
-                "color" : "#2196f3",
-                "settings" : { }
-              }, {
-                "name" : "type",
-                "type" : "entityField",
-                "label" : "Type",
-                "color" : "#4caf50",
-                "settings" : { }
-              }, {
-                "name" : "label",
-                "type" : "entityField",
-                "label" : "Label",
-                "color" : "#f44336",
-                "settings" : { }
-              } ],
-              "alarmFilterConfig" : {
-                "statusList" : [ "ACTIVE" ]
-              }
-            } ],
-            "widgetStyle" : { },
-            "actions" : {
-              "nodeSelected" : [ {
-                "name" : "Update Dashboard",
-                "icon" : "more_horiz",
-                "useShowWidgetActionFunction" : null,
-                "showWidgetActionFunction" : "return true;",
-                "type" : "updateDashboardState",
-                "targetDashboardStateId" : null,
-                "setEntityId" : true,
-                "stateEntityParamName" : "SelectedAsset",
-                "openRightLayout" : false,
-                "openInSeparateDialog" : false,
-                "openInPopover" : false,
-                "id" : "94a653dc-e041-9856-1852-849ed8d5b02b"
-              } ]
-            },
-            "enableDataExport" : false,
-            "widgetCss" : "",
-            "pageSize" : 1024,
-            "noDataDisplayMessage" : ""
-          },
-          "row" : 0,
-          "col" : 0,
-          "id" : "40def845-791c-da43-d59e-2b1b3111c2aa"
-        },
-        "81619c67-aed4-6b16-ed88-a4791c5cf1d9" : {
-          "typeFullFqn" : "tenant.nav_bar_",
-          "type" : "static",
-          "sizeX" : 7.5,
-          "sizeY" : 3,
-          "config" : {
-            "datasources" : [ {
-              "type" : "static",
-              "name" : "function",
-              "dataKeys" : [ {
-                "name" : "f(x)",
-                "type" : "function",
-                "label" : "Random",
-                "color" : "#2196f3",
-                "settings" : { },
-                "funcBody" : "var value = prevValue + Math.random() * 100 - 50;\nvar multiplier = Math.pow(10, 2 || 0);\nvar value = Math.round(value * multiplier) / multiplier;\nif (value < -1000) {\n\tvalue = -1000;\n} else if (value > 1000) {\n\tvalue = 1000;\n}\nreturn value;"
-              } ]
-            } ],
-            "showTitle" : false,
-            "backgroundColor" : "rgba(255, 255, 255, 0)",
-            "color" : "rgba(0, 0, 0, 0.87)",
-            "padding" : "0px",
-            "settings" : {
-              "cardHtml" : "<div class=\"page-header\">\n\n    <!-- ═══ TOP ROW: Title + Clock ═══ -->\n    <div class=\"header-top\">\n        <div class=\"title-section\">\n            SOLAR PV PLANT MONITORING - FINANCIAL PERFORMANCE OVERVIEW\n        </div>\n        <div class=\"time-section\">\n            <span id=\"date-display\">Loading...</span>\n            <span class=\"separator\">|</span>\n            <span id=\"time-display\">--:--:--</span>\n            <span class=\"timezone\">(UTC+05:30)</span>\n        </div>\n    </div>\n\n    <!-- ═══ DIVIDER ═══ -->\n    <div class=\"header-divider\"></div>\n\n    <!-- ═══ BOTTOM ROW: Navigation Tabs ═══ -->\n    <div class=\"header-nav\">\n        <div class=\"nav-item\" data-state=\"energy_prod\">Energy &amp; Yield</div>\n        <div class=\"nav-item\" data-state=\"forecasts\">Forecasts &amp; Risk</div>\n        <div class=\"nav-item\" data-state=\"financial\">Financials</div>\n        <div class=\"nav-item\" data-state=\"esg\">ESG &amp; Carbon</div>\n        <div class=\"nav-item\" data-state=\"grid_loss\">Grid &amp; Losses</div>\n        <div class=\"nav-item\" data-state=\"portfolio\">Portfolio</div>\n    </div>\n\n</div>\n",
-              "cardCss" : ".card {\n    font-weight: bold;\n    font-size: 32px;\n    color: #999;\n    width: 100%;\n    height: 100%;\n    display: flex;\n    align-items: center;\n    justify-content: center;\n}"
-            },
-            "title" : "Nav bar ",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "heat map 2.0",
+            "decimals" : null,
             "dropShadow" : true,
-            "enableFullscreen" : false,
+            "enableFullscreen" : true,
             "enableDataExport" : true,
             "widgetStyle" : { },
             "widgetCss" : "",
@@ -35158,7 +35335,91 @@
           },
           "row" : 0,
           "col" : 0,
-          "id" : "81619c67-aed4-6b16-ed88-a4791c5cf1d9"
+          "id" : "63451df2-7977-d179-d3cd-b5da4953064c"
+        },
+        "84f657f4-20cd-8eeb-f1bb-386df6f509b4" : {
+          "typeFullFqn" : "tenant.heat_map_4_0",
+          "type" : "latest",
+          "sizeX" : 8,
+          "sizeY" : 4.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "75d4c48d-42cf-ee0a-bfe7-dfce65b47b46",
+              "dataKeys" : [ {
+                "name" : "Capacity",
+                "type" : "attribute",
+                "label" : "Capacity",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "active_power",
+                "type" : "timeseries",
+                "label" : "active_power",
+                "color" : "#4caf50",
+                "settings" : { }
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "heat map 4.0",
+            "decimals" : null
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "84f657f4-20cd-8eeb-f1bb-386df6f509b4"
+        },
+        "1a8236f6-9e25-d805-bf7a-483f15a92acd" : {
+          "typeFullFqn" : "tenant.heat_map_4_0",
+          "type" : "latest",
+          "sizeX" : 8,
+          "sizeY" : 4.5,
+          "config" : {
+            "datasources" : [ {
+              "type" : "entity",
+              "name" : "",
+              "entityAliasId" : "390e130d-af9e-fa03-c4d3-85ba80896b61",
+              "dataKeys" : [ {
+                "name" : "active_power",
+                "type" : "timeseries",
+                "label" : "active_power",
+                "color" : "#2196f3",
+                "settings" : { }
+              }, {
+                "name" : "Performance",
+                "type" : "timeseries",
+                "label" : "Performance",
+                "color" : "#4caf50",
+                "settings" : { },
+                "aggregationType" : "NONE",
+                "units" : null,
+                "decimals" : null,
+                "funcBody" : null,
+                "usePostProcessing" : null,
+                "postFuncBody" : null
+              } ],
+              "alarmFilterConfig" : {
+                "statusList" : [ "ACTIVE" ]
+              }
+            } ],
+            "showTitle" : true,
+            "backgroundColor" : "#fff",
+            "color" : "rgba(0, 0, 0, 0.87)",
+            "padding" : "8px",
+            "settings" : { },
+            "title" : "heat map 4.0",
+            "decimals" : null
+          },
+          "row" : 0,
+          "col" : 0,
+          "id" : "1a8236f6-9e25-d805-bf7a-483f15a92acd"
         }
       },
       "states" : {
@@ -35447,17 +35708,53 @@
               "widgets" : {
                 "269b6515-7b07-1ba9-2cf4-e5b7864ed73e" : {
                   "sizeX" : 167,
-                  "sizeY" : 103,
+                  "sizeY" : 83,
                   "preserveAspectRatio" : false,
                   "resizable" : true,
-                  "row" : 1,
+                  "row" : 9,
                   "col" : 36
                 },
-                "40def845-791c-da43-d59e-2b1b3111c2aa" : {
+                "7d965afc-6afd-8e67-1f44-76174ddb16f6" : {
                   "sizeX" : 35,
-                  "sizeY" : 105,
+                  "sizeY" : 96,
+                  "row" : 9,
+                  "col" : 0
+                },
+                "fc79b733-f1bc-0704-71de-ba31f480c6aa" : {
+                  "sizeX" : 144,
+                  "sizeY" : 8,
                   "row" : 0,
                   "col" : 0
+                },
+                "807eec78-cd24-216c-447b-6099ee5de618" : {
+                  "sizeX" : 9,
+                  "sizeY" : 5,
+                  "row" : 2,
+                  "col" : 145
+                },
+                "567d94e6-efa9-fba9-ee4c-4aff84102d62" : {
+                  "sizeX" : 8,
+                  "sizeY" : 6,
+                  "row" : 1,
+                  "col" : 155
+                },
+                "7f03cdee-199d-d1ec-b5ce-450763301734" : {
+                  "sizeX" : 8,
+                  "sizeY" : 5,
+                  "row" : 2,
+                  "col" : 164
+                },
+                "c3f6ecb0-89ea-606b-0396-bb047893628a" : {
+                  "sizeX" : 13,
+                  "sizeY" : 6,
+                  "row" : 1,
+                  "col" : 173
+                },
+                "84f657f4-20cd-8eeb-f1bb-386df6f509b4" : {
+                  "sizeX" : 122,
+                  "sizeY" : 37,
+                  "row" : 95,
+                  "col" : 35
                 }
               },
               "gridSettings" : {
@@ -35714,10 +36011,10 @@
                   "col" : 147
                 },
                 "32c8e168-c676-3497-b1cf-12e8dde2b12d" : {
-                  "sizeX" : 84,
-                  "sizeY" : 5,
+                  "sizeX" : 108,
+                  "sizeY" : 4,
                   "row" : 0,
-                  "col" : 128
+                  "col" : 104
                 },
                 "4c039c5f-556b-06e8-7314-67fdab555f27" : {
                   "sizeX" : 73,
@@ -35732,157 +36029,11 @@
                   "row" : 0,
                   "col" : 78
                 },
-                "bddc044e-8c54-0902-4ee8-802ad69ce746" : {
-                  "sizeX" : 72,
-                  "sizeY" : 35,
+                "1a8236f6-9e25-d805-bf7a-483f15a92acd" : {
+                  "sizeX" : 66,
+                  "sizeY" : 37,
                   "row" : 66,
-                  "col" : 0
-                },
-                "06de0e7d-30e4-cbad-a2f7-822540af4765" : {
-                  "sizeX" : 23,
-                  "sizeY" : 4,
-                  "row" : 0,
-                  "col" : 104
-                }
-              },
-              "gridSettings" : {
-                "layoutType" : "default",
-                "backgroundColor" : "#EEEEEE",
-                "columns" : 200,
-                "margin" : 0,
-                "outerMargin" : false,
-                "backgroundSizeMode" : "100%",
-                "minColumns" : 200,
-                "viewFormat" : "grid",
-                "autoFillHeight" : true,
-                "rowHeight" : 70,
-                "mobileAutoFillHeight" : false,
-                "mobileRowHeight" : 70
-              }
-            }
-          }
-        },
-        "agg_ovr" : {
-          "name" : "GP_Agg",
-          "root" : false,
-          "layouts" : {
-            "main" : {
-              "widgets" : {
-                "4b680f31-7955-016b-4f7b-b3ee0309f5df" : {
-                  "sizeX" : 25,
-                  "sizeY" : 4,
-                  "row" : 12,
-                  "col" : 0
-                },
-                "8cb2dd84-b527-41ac-5758-64ad0b0e0e03" : {
-                  "sizeX" : 25,
-                  "sizeY" : 4,
-                  "row" : 12,
-                  "col" : 26
-                },
-                "235c4425-a02d-f4c7-50cc-1b055af09d06" : {
-                  "sizeX" : 25,
-                  "sizeY" : 4,
-                  "row" : 12,
-                  "col" : 52
-                },
-                "7b8f0e34-ff7c-eb34-acf5-735b39cbd032" : {
-                  "sizeX" : 66,
-                  "sizeY" : 8,
-                  "row" : 32,
-                  "col" : 0
-                },
-                "691b23a0-4ea2-eb54-d160-713c1468ddb0" : {
-                  "sizeX" : 66,
-                  "sizeY" : 8,
-                  "row" : 24,
-                  "col" : 0
-                },
-                "6c8893b2-95a6-8dc9-3402-eff53f5943a3" : {
-                  "sizeX" : 66,
-                  "sizeY" : 7,
-                  "row" : 17,
-                  "col" : 0
-                },
-                "1ad626a6-dd88-bf95-9775-13a4b73e055d" : {
-                  "sizeX" : 68,
-                  "sizeY" : 8,
-                  "row" : 17,
-                  "col" : 67
-                },
-                "74836aab-025b-0748-e89c-681bfdd1199c" : {
-                  "sizeX" : 68,
-                  "sizeY" : 8,
-                  "row" : 25,
-                  "col" : 67
-                },
-                "4ee57088-e7f0-2b1b-ce73-cd867e28fdab" : {
-                  "sizeX" : 68,
-                  "sizeY" : 7,
-                  "row" : 33,
-                  "col" : 67
-                },
-                "233dee21-d314-d575-f962-7cad3c75a36a" : {
-                  "sizeX" : 63,
-                  "sizeY" : 23,
-                  "row" : 17,
-                  "col" : 136
-                },
-                "0c7ea19d-e281-fbec-ae67-6ce0f3ffbe46" : {
-                  "sizeX" : 66,
-                  "sizeY" : 30,
-                  "row" : 44,
-                  "col" : 0
-                },
-                "3b6f4544-08f2-f52e-b0d3-16459956a9fc" : {
-                  "sizeX" : 63,
-                  "sizeY" : 67,
-                  "row" : 41,
-                  "col" : 136
-                },
-                "5f85890e-6ccf-f2df-52f7-35d4d1bb192f" : {
-                  "sizeX" : 95,
-                  "sizeY" : 4,
-                  "row" : 12,
-                  "col" : 104
-                },
-                "7d86a084-f70b-7eed-0bd0-e3f5eef25808" : {
-                  "sizeX" : 68,
-                  "sizeY" : 33,
-                  "mobileHeight" : null,
-                  "row" : 75,
-                  "col" : 67
-                },
-                "ba57bbab-2c8c-b3a5-0c2d-6b9b9418bf2c" : {
-                  "sizeX" : 66,
-                  "sizeY" : 3,
-                  "row" : 41,
-                  "col" : 0
-                },
-                "8c8c6ca0-481f-38df-f8d4-558834b74e08" : {
-                  "sizeX" : 68,
-                  "sizeY" : 33,
-                  "mobileHeight" : null,
-                  "row" : 41,
-                  "col" : 67
-                },
-                "83c7a165-1806-ded8-bb6e-337ae999183d" : {
-                  "sizeX" : 25,
-                  "sizeY" : 4,
-                  "row" : 12,
-                  "col" : 78
-                },
-                "4d1697d7-a1d8-b01b-cbe4-08f6c7b41104" : {
-                  "sizeX" : 65,
-                  "sizeY" : 30,
-                  "row" : 75,
-                  "col" : 0
-                },
-                "81619c67-aed4-6b16-ed88-a4791c5cf1d9" : {
-                  "sizeX" : 199,
-                  "sizeY" : 7,
-                  "row" : 4,
-                  "col" : 0
+                  "col" : 5
                 }
               },
               "gridSettings" : {
@@ -36736,6 +36887,140 @@
               }
             }
           }
+        },
+        "agg_ovr" : {
+          "name" : "GP_Agg",
+          "root" : false,
+          "layouts" : {
+            "main" : {
+              "widgets" : {
+                "4b680f31-7955-016b-4f7b-b3ee0309f5df" : {
+                  "sizeX" : 25,
+                  "sizeY" : 4,
+                  "row" : 12,
+                  "col" : 0
+                },
+                "8cb2dd84-b527-41ac-5758-64ad0b0e0e03" : {
+                  "sizeX" : 25,
+                  "sizeY" : 4,
+                  "row" : 12,
+                  "col" : 26
+                },
+                "235c4425-a02d-f4c7-50cc-1b055af09d06" : {
+                  "sizeX" : 25,
+                  "sizeY" : 4,
+                  "row" : 12,
+                  "col" : 52
+                },
+                "7b8f0e34-ff7c-eb34-acf5-735b39cbd032" : {
+                  "sizeX" : 66,
+                  "sizeY" : 8,
+                  "row" : 32,
+                  "col" : 0
+                },
+                "691b23a0-4ea2-eb54-d160-713c1468ddb0" : {
+                  "sizeX" : 66,
+                  "sizeY" : 8,
+                  "row" : 24,
+                  "col" : 0
+                },
+                "6c8893b2-95a6-8dc9-3402-eff53f5943a3" : {
+                  "sizeX" : 66,
+                  "sizeY" : 7,
+                  "row" : 17,
+                  "col" : 0
+                },
+                "1ad626a6-dd88-bf95-9775-13a4b73e055d" : {
+                  "sizeX" : 68,
+                  "sizeY" : 8,
+                  "row" : 17,
+                  "col" : 67
+                },
+                "74836aab-025b-0748-e89c-681bfdd1199c" : {
+                  "sizeX" : 68,
+                  "sizeY" : 8,
+                  "row" : 25,
+                  "col" : 67
+                },
+                "4ee57088-e7f0-2b1b-ce73-cd867e28fdab" : {
+                  "sizeX" : 68,
+                  "sizeY" : 7,
+                  "row" : 33,
+                  "col" : 67
+                },
+                "233dee21-d314-d575-f962-7cad3c75a36a" : {
+                  "sizeX" : 63,
+                  "sizeY" : 23,
+                  "row" : 17,
+                  "col" : 136
+                },
+                "0c7ea19d-e281-fbec-ae67-6ce0f3ffbe46" : {
+                  "sizeX" : 66,
+                  "sizeY" : 30,
+                  "row" : 44,
+                  "col" : 0
+                },
+                "3b6f4544-08f2-f52e-b0d3-16459956a9fc" : {
+                  "sizeX" : 63,
+                  "sizeY" : 67,
+                  "row" : 41,
+                  "col" : 136
+                },
+                "5f85890e-6ccf-f2df-52f7-35d4d1bb192f" : {
+                  "sizeX" : 95,
+                  "sizeY" : 4,
+                  "row" : 12,
+                  "col" : 104
+                },
+                "7d86a084-f70b-7eed-0bd0-e3f5eef25808" : {
+                  "sizeX" : 68,
+                  "sizeY" : 33,
+                  "mobileHeight" : null,
+                  "row" : 75,
+                  "col" : 67
+                },
+                "ba57bbab-2c8c-b3a5-0c2d-6b9b9418bf2c" : {
+                  "sizeX" : 66,
+                  "sizeY" : 3,
+                  "row" : 41,
+                  "col" : 0
+                },
+                "8c8c6ca0-481f-38df-f8d4-558834b74e08" : {
+                  "sizeX" : 68,
+                  "sizeY" : 33,
+                  "mobileHeight" : null,
+                  "row" : 41,
+                  "col" : 67
+                },
+                "83c7a165-1806-ded8-bb6e-337ae999183d" : {
+                  "sizeX" : 25,
+                  "sizeY" : 4,
+                  "row" : 12,
+                  "col" : 78
+                },
+                "63451df2-7977-d179-d3cd-b5da4953064c" : {
+                  "sizeX" : 66,
+                  "sizeY" : 31,
+                  "row" : 76,
+                  "col" : 0
+                }
+              },
+              "gridSettings" : {
+                "layoutType" : "default",
+                "backgroundColor" : "#EEEEEE",
+                "columns" : 200,
+                "margin" : 0,
+                "outerMargin" : false,
+                "backgroundSizeMode" : "100%",
+                "minColumns" : 200,
+                "viewFormat" : "grid",
+                "autoFillHeight" : true,
+                "rowHeight" : 70,
+                "mobileAutoFillHeight" : false,
+                "mobileRowHeight" : 70
+              }
+            }
+          }
         }
       },
       "entityAliases" : {
@@ -37087,7 +37372,7 @@
             "stateEntityParamName" : "SelectedAsset",
             "defaultStateEntity" : {
               "entityType" : "ASSET",
-              "id" : "78fda490-e08b-11f0-b68f-8f33a9d74e0c"
+              "id" : "1ce72a40-e46b-11ef-acb6-5d64238690d4"
             },
             "rootEntity" : null,
             "direction" : "FROM",
@@ -37272,7 +37557,7 @@
           "alias" : "Windforce",
           "filter" : {
             "type" : "singleEntity",
-            "resolveMultiple" : false,
+            "resolveMultiple" : true,
             "singleEntity" : {
               "entityType" : "ASSET",
               "id" : "1ce72a40-e46b-11ef-acb6-5d64238690d4"
